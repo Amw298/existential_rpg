@@ -18,6 +18,8 @@ MonoBehaviour:
   - '2. '
   - '3. '
   choiceButtons: []
+  isLock: 1
+  uniqueID: todo
   OnSpecialEvent:
     m_PersistentCalls:
       m_Calls: []

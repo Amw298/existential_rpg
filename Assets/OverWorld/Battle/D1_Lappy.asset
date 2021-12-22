@@ -17,7 +17,11 @@ MonoBehaviour:
   - 'Talk talk talk
 
 '
-  choiceButtons: []
+  choiceButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  isLock: 1
+  uniqueID: Lappy
   OnSpecialEvent:
     m_PersistentCalls:
       m_Calls: []

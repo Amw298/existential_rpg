@@ -12,7 +12,6 @@ public class DialogManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogText;
     private Queue<string> sentences;
-    private int counter = 0;
     private Canvas canvas;
     [SerializeField]
     private GameObject ghost;
@@ -27,16 +26,18 @@ public class DialogManager : MonoBehaviour
     public Dialog currentDialog;
     public int altDialogIndex;
     public DecisionSelector decisionSelector;
-
+    public LinkedList<Dialog> recentlyUsedDialogs;
+    public Door door;
     // Start is called before the first frame update
     void Start()
     {
 
         ghost = GameObject.FindGameObjectWithTag("PlayerCharacter");
         pi = ghost.GetComponent<PlayerInput>();
-      
+        door = GameObject.FindObjectOfType<Door>();
         canvas = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<Canvas>();
         sentences = new Queue<string>();
+        recentlyUsedDialogs = new LinkedList<Dialog>();
 
     }
 
@@ -50,7 +51,27 @@ public class DialogManager : MonoBehaviour
 
     public void StartDialog(Dialog dialog)
     {
+        bool usedalready =false;
+        if (dialog.isLock)
+        {
+            foreach (Dialog dia in recentlyUsedDialogs)
+            {
+                print("woop");
+                if (dia.uniqueID.Equals(dialog.uniqueID))
+                {
+                    usedalready = true;
+                }
+            }
+            if (!usedalready)
+            {
+                door.Unlock();
+                recentlyUsedDialogs.AddLast(dialog);
 
+            }
+
+
+        }
+       
         //   if(dialog== null || !isInteracting)
         //   {
         //   Debug.Log("this happened00");

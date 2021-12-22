@@ -16,6 +16,8 @@ MonoBehaviour:
   sentences:
   - Take nap?
   choiceButtons: []
+  isLock: 1
+  uniqueID: Bed
   OnSpecialEvent:
     m_PersistentCalls:
       m_Calls: []

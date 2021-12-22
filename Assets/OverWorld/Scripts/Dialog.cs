@@ -11,9 +11,10 @@ public class Dialog :ScriptableObject
     [TextArea(3,10)]
     public string[] sentences;
     public GameObject[] choiceButtons;
-
+    public bool isLock;
+    public string uniqueID;
     public UnityEvent OnSpecialEvent;
-
+   
         public Dialog[] AlternativeDialog;
 
     

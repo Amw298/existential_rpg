@@ -34,7 +34,10 @@ public class GhostMover : MonoBehaviour
     void FixedUpdate()
     {
         Debug.Log(inputState);
-        transform.position += direction * 10f*Time.fixedDeltaTime;
+        if (inputState == InputState.Overworld)
+        {
+            transform.position += direction * 10f * Time.fixedDeltaTime;
+        }
         savedPosition = transform.position;
         //inputState = InputState.Interrogation;
     }
@@ -45,17 +48,11 @@ public class GhostMover : MonoBehaviour
         {
             SetGhostDirection(context.ReadValue<Vector2>());
         } else if(inputState == InputState.Interrogation){
-           
-            
             moveSelector.ChooseMove(context.ReadValue<Vector2>());
         }else if(inputState == InputState.Dialog)
         {
          decisionSelector.ChooseDecision(context.ReadValue<Vector2>());
         }
-        
-        
-        
-   
     }
    public  void SetGhostDirection(Vector2 direction)
     {
@@ -68,8 +65,6 @@ public class GhostMover : MonoBehaviour
     }
     public void OnInteract(InputAction.CallbackContext context)
     {
-     
-
         if (context.canceled && inputState == InputState.Overworld)
         {
             FindObjectOfType<DialogManager>().StartDialog(dialog);

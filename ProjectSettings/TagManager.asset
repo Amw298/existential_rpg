@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerCharacter
   - DialogBox
+  - Lock
   layers:
   - Default
   - TransparentFX
