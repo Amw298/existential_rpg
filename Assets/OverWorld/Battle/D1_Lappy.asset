@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Lappy
   sentences:
-  - 'Talk talk talk
+  - 'You boot up the laptop.
 
 '
   choiceButtons:

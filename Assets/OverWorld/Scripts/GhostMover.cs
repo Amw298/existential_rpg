@@ -13,6 +13,7 @@ public class GhostMover : MonoBehaviour
     public DialogManager dialogManager;
     public DecisionSelector decisionSelector;
     public MoveSelector moveSelector;
+    private InteractableType interactableType;
     //private int counter=0;
     private InputState inputState;
 
@@ -20,7 +21,13 @@ public class GhostMover : MonoBehaviour
     {
         Overworld,
         Dialog,
-        Interrogation
+        Interrogation,
+        Laptop
+    }
+    private enum InteractableType
+    {
+        Laptop,
+        Misc
     }
     void Start()
     {
@@ -41,7 +48,7 @@ public class GhostMover : MonoBehaviour
         savedPosition = transform.position;
         //inputState = InputState.Interrogation;
     }
-  public  void OnGhostMove(InputAction.CallbackContext context)
+  public void OnGhostMove(InputAction.CallbackContext context)
     {
         
         if (inputState == InputState.Overworld)
@@ -67,8 +74,18 @@ public class GhostMover : MonoBehaviour
     {
         if (context.canceled && inputState == InputState.Overworld)
         {
-            FindObjectOfType<DialogManager>().StartDialog(dialog);
-            //dialogManager.StartDialog(dialog);
+            if (interactableType == InteractableType.Laptop)
+            {
+                Debug.Log("interacting with laptop");
+                FindObjectOfType<DialogManager>().StartDialog(dialog);
+                // richie do stuff
+                // make a Laptop manager or something and use the laptop input state to make you able to use the laptop. 
+            }
+            else
+            {
+                FindObjectOfType<DialogManager>().StartDialog(dialog);
+            }
+         
         }else if(context.canceled && inputState == InputState.Interrogation)
         {
             moveSelector.SelectMove();
@@ -94,5 +111,15 @@ public class GhostMover : MonoBehaviour
     public void EnableInterogation()
     {
         inputState = InputState.Interrogation;
+    }
+    public void EnableLaptop()
+    {
+        interactableType =InteractableType.Laptop;
+
+    }
+    public void DisableLaptop()
+    {
+        interactableType = InteractableType.Misc;
+
     }
 }
