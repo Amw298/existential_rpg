@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a657055a1f0e9448feb09b73fefe7d, type: 3}
   m_Name: D1_ToDo
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: To-do List
   sentences:
-  - '1. '
-  - '2. '
-  - '3. '
+  - '1. clean the mess
+
+    2. do some homework
+
+    3. go to class'
   choiceButtons: []
   isLock: 1
   uniqueID: todo
