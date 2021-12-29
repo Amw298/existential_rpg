@@ -33,7 +33,7 @@ public class GhostMover : MonoBehaviour
     void Start()
     {
        // inputState = InputState.Interrogation;
-        transform.position = savedPosition;
+        //transform.position = savedPosition;
  
         pi = gameObject.GetComponent<PlayerInput>();
         introManager = FindObjectOfType<IntroManager>();
@@ -64,7 +64,7 @@ public class GhostMover : MonoBehaviour
         }
         else if (context.canceled && inputState == InputState.Intro)
         {
-            if (introManager.backround.color.a < 0.1f)
+            if (introManager.backround.color.a < 0.4f)
             {
                 inputState = InputState.Overworld;
             }
