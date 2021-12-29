@@ -23,8 +23,12 @@ public class OutroManager : MonoBehaviour
 
         {
             i++;
+            if (i > 1)
+            {
+                i = 0;
+            }
             Debug.Log(i);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(i);
             //   FindObjectOfType<DialogManager>().SetInteracting(true);
         }
     }
