@@ -16,13 +16,14 @@ public class GhostMover : MonoBehaviour
     private InteractableType interactableType;
     //private int counter=0;
     private InputState inputState;
-
+    private IntroManager introManager;
  private enum InputState
     {
         Overworld,
         Dialog,
         Interrogation,
-        Laptop
+        Laptop,
+        Intro,
     }
     private enum InteractableType
     {
@@ -35,6 +36,7 @@ public class GhostMover : MonoBehaviour
         transform.position = savedPosition;
  
         pi = gameObject.GetComponent<PlayerInput>();
+        introManager = FindObjectOfType<IntroManager>();
     }
 
     // Update is called once per frame
@@ -59,6 +61,13 @@ public class GhostMover : MonoBehaviour
         }else if(inputState == InputState.Dialog)
         {
          decisionSelector.ChooseDecision(context.ReadValue<Vector2>());
+        }
+        else if (context.canceled && inputState == InputState.Intro)
+        {
+            if (introManager.backround.color.a < 0.1f)
+            {
+                inputState = InputState.Overworld;
+            }
         }
     }
    public  void SetGhostDirection(Vector2 direction)
@@ -92,6 +101,13 @@ public class GhostMover : MonoBehaviour
         }else if(context.canceled && inputState == InputState.Dialog)
         {
             decisionSelector.SelectDecision();
+        }else if(context.canceled && inputState == InputState.Intro)
+        {
+            introManager.FadeOutIntro();
+            if(introManager.backround.color.a < 0.1f)
+            {
+                inputState = InputState.Overworld;
+            }
         }
             
 
@@ -121,5 +137,9 @@ public class GhostMover : MonoBehaviour
     {
         interactableType = InteractableType.Misc;
 
+    }
+    public void EnableIntro()
+    {
+        inputState = InputState.Intro;
     }
 }
