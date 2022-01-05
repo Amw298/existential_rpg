@@ -1168,7 +1168,7 @@ GameObject:
   - component: {fileID: 160208416}
   m_Layer: 0
   m_Name: Bed
-  m_TagString: Lock
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42307,6 +42307,7 @@ MonoBehaviour:
   altDialogIndex: 0
   decisionSelector: {fileID: 415211202}
   door: {fileID: 0}
+  cm: {fileID: 0}
 --- !u!4 &941956283
 Transform:
   m_ObjectHideFlags: 0
@@ -48890,9 +48891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d1bd52f1caffd4c915d51e13299e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outdoors: {fileID: 0}
-  indoors: {fileID: 0}
-  locks: []
 --- !u!61 &1981071473
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public GameObject outdoors;
-    public GameObject indoors;
+    private GameObject outdoors;
+    private GameObject indoors;
 
-    public GameObject[] locks;
+    private GameObject[] locks;
     int lockcount;
     private Area area;
     // Start is called before the first frame update

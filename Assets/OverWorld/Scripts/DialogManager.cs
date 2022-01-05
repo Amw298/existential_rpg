@@ -6,6 +6,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
 
+
 public class DialogManager : MonoBehaviour
 {
 
@@ -28,10 +29,12 @@ public class DialogManager : MonoBehaviour
     public DecisionSelector decisionSelector;
     public LinkedList<Dialog> recentlyUsedDialogs;
     public Door door;
+    public CoffeeMachine cm;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        cm = FindObjectOfType<CoffeeMachine>();
         ghost = GameObject.FindGameObjectWithTag("PlayerCharacter");
         pi = ghost.GetComponent<PlayerInput>();
         door = GameObject.FindObjectOfType<Door>();
@@ -48,15 +51,71 @@ public class DialogManager : MonoBehaviour
     }
     // Update is called once per frame
 
-
-    public void StartDialog(Dialog dialog)
+    public void StartDialog(Dialog dialog, CoffeeMachine coffeeMachine)
     {
-        bool usedalready =false;
+      //  cm = coffeeMachine;
+        bool usedalready = false;
         if (dialog.isLock)
         {
             foreach (Dialog dia in recentlyUsedDialogs)
             {
-                print("woop");
+                if (dia.uniqueID.Equals(dialog.uniqueID))
+                {
+                    usedalready = true;
+                }
+            }
+            if (!usedalready)
+            {
+                door.Unlock();
+                recentlyUsedDialogs.AddLast(dialog);
+                //coffeeMachine.incrementInteracted();
+            }
+
+
+        }
+        else
+        {
+            foreach (Dialog dia in recentlyUsedDialogs)
+            {
+                if (dia.uniqueID.Equals(dialog.uniqueID))
+                {
+                    usedalready = true;
+                }
+            }
+            if (!usedalready)
+            {
+                recentlyUsedDialogs.AddLast(dialog);
+               // coffeeMachine.incrementInteracted();
+            }
+        }
+        if (dialog.AlternativeDialog.Length == 0)
+        {
+            decisionToBeMade = false;
+
+        }
+        else
+        {
+            decisionToBeMade = true;
+        }
+        decisionSelector.EnableContinue();
+        gm.EnableDialog();
+        canvas.enabled = true;
+        currentDialog = dialog;// set the dialog manager dialog to the dialog that was input
+        nameText.text = dialog.npcName;// show the npc name
+        sentences.Clear();
+        foreach (string sentence in dialog.sentences)// this grabs the sentences in the the array in the dialog scriptable obj
+        {
+            sentences.Enqueue(sentence);// adds to the sentence queue
+        }
+        DisplayNextSentence();
+    }
+    public void StartDialog(Dialog dialog)
+    {
+        bool usedalready = false;
+        if (dialog.isLock)
+        {
+            foreach (Dialog dia in recentlyUsedDialogs)
+            {
                 if (dia.uniqueID.Equals(dialog.uniqueID))
                 {
                     usedalready = true;
@@ -68,19 +127,11 @@ public class DialogManager : MonoBehaviour
                 recentlyUsedDialogs.AddLast(dialog);
 
             }
-
-
         }
-       
-        //   if(dialog== null || !isInteracting)
-        //   {
-        //   Debug.Log("this happened00");
-        //     dialog = defaultDialog;
-        //  }
-        if(dialog.AlternativeDialog.Length ==0)
+        if (dialog.AlternativeDialog.Length == 0)
         {
             decisionToBeMade = false;
-           
+
         }
         else
         {
@@ -90,9 +141,9 @@ public class DialogManager : MonoBehaviour
         gm.EnableDialog();
         canvas.enabled = true;
         currentDialog = dialog;// set the dialog manager dialog to the dialog that was input
-        //use this to invoke the special jawn
-        //dialog.OnSpecialEvent?.Invoke();
-      //  dialog = defaultDialog;
+                               //use this to invoke the special jawn
+                               //dialog.OnSpecialEvent?.Invoke();
+                               //  dialog = defaultDialog;
         nameText.text = dialog.npcName;// show the npc name
 
         sentences.Clear();
@@ -103,12 +154,14 @@ public class DialogManager : MonoBehaviour
         }
         DisplayNextSentence();
     }
-
-    public void DisplayNextSentence()
-
+    private void EndDialog(CoffeeMachine coffeeMachine)
     {
- 
-       if (sentences.Count == 1)
+        canvas.enabled = false;
+        gm.EnableOverworld();
+    }
+    public void DisplayNextSentence()
+    {
+        if (sentences.Count == 1)
         {
             if (decisionToBeMade)
             {
@@ -117,40 +170,25 @@ public class DialogManager : MonoBehaviour
             }
         }
 
-            if (sentences.Count == 0)
+        if (sentences.Count == 0)
         {
-    
-                EndDialog();
-                return;
+
+            EndDialog();
+            return;
 
         }
-
         string sentence = sentences.Dequeue();// makes the current sentence the queue
-
         StopAllCoroutines();
-
         StartCoroutine(TypeSentence(sentence));
-
-
     }
 
     IEnumerator TypeSentence(string sentence)
     {
-        //OnTextEffect = noEffect;
         dialogText.text = "";
-        //int i = 0;
-        // isTyping = true;
         foreach (char letter in sentence.ToCharArray())
         {
-            // CheckTag(sentence, letter, i, ref inTag);
-            // i++;
-            //  if (!inTag)
-            //  {
             dialogText.text += letter;
-
-            yield return null;//new WaitForSeconds(1f*Time.fixedDeltaTime);
-                              //    }
-
+            yield return null;
         }
 
     }
@@ -189,12 +227,8 @@ public class DialogManager : MonoBehaviour
     }
     private void EndDialog()
     {
-
-            canvas.enabled = false;
+        canvas.enabled = false;
         gm.EnableOverworld();
- 
-   
-
     }
     protected void CheckTag(string fullText, char c, int j, ref bool inTag)
     {
@@ -212,7 +246,6 @@ public class DialogManager : MonoBehaviour
             }
             else
             {
-                //OnTextEffect = noEffect;
                 Debug.Log("No Effect");
             }
         }
@@ -221,14 +254,6 @@ public class DialogManager : MonoBehaviour
             inTag = false;
         }
     }
-
-
-    private void noEffect(object sender, EventArgs e)
-    {
-
-    }
-
-
     public void SetInteracting(bool interacting)
     {
         isInteracting = interacting;
@@ -237,6 +262,11 @@ public class DialogManager : MonoBehaviour
     public void SelectDecision(int decision)
     {
         altDialogIndex = decision;
+       // Debug.Log(decision);
+        if(altDialogIndex ==0 && gm.CoffeeMachine())// if yes increment the thing
+        {
+            cm.incrementInteracted();
+        }
         StartDialog(currentDialog.AlternativeDialog[altDialogIndex]);
     }
 

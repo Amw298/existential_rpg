@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8a657055a1f0e9448feb09b73fefe7d, type: 3}
-  m_Name: New Dialog 2
+  m_Name: D2_Coffee_Yes2
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: Endorphin Machine
   sentences:
-  - Napping
-  choiceButtons: []
-  OnSpecialEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  - As you drink your third cup of coffee anxiety begins to wash over you
+  isLock: 0
+  uniqueID: 
   AlternativeDialog: []

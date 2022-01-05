@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8a657055a1f0e9448feb09b73fefe7d, type: 3}
-  m_Name: New Dialog
+  m_Name: D2_Lappy_Yes
   m_EditorClassIdentifier: 
-  npcName: Bed
+  npcName: Lappy
   sentences:
-  - Take nap?
-  choiceButtons: []
-  isLock: 1
-  uniqueID: Bed
-  OnSpecialEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  - You refresh the page.
+  - Absolutely nothing of interest...
+  - Would you like to refresh again?
+  isLock: 0
+  uniqueID: 
   AlternativeDialog:
-  - {fileID: 11400000, guid: b1d2a1db345cd8b4a906272c4c4ae5e8, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: bdc615ef67d404a44ba13020ecbb0e1f, type: 2}
