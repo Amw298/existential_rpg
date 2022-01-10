@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Door : MonoBehaviour
 {
     private GameObject outdoors;
     private GameObject indoors;
-
+    private GhostMover player;
     private GameObject[] locks;
+    public Image backround;
+
+    public Dialog dialog;
     int lockcount;
     private Area area;
     // Start is called before the first frame update
@@ -24,6 +28,9 @@ public class Door : MonoBehaviour
         outdoors.SetActive(false);
         indoors = GameObject.FindGameObjectWithTag("indoors");
         area = Area.Inside;
+        player = FindObjectOfType<GhostMover>();
+        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
+
     }
 
     // Update is called once per frame
@@ -41,31 +48,89 @@ public class Door : MonoBehaviour
         {
             if (lockcount != 0)
             {
-                Debug.Log("not all unlocked" + lockcount);
+                player.EnableDialog();
+                FindObjectOfType<DialogManager>().StartDialog(dialog);
+
+
             }
             else
             {
                 GetComponent<Collider2D>().isTrigger = true;
+                GoOutside();
             }
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void GoOutside()
+    {
+        indoors.SetActive(false);
+        outdoors.SetActive(true);
+        area = Area.Outside;
+        TransitionOn();
+        player.SetY(7.0f);
+        player.Disable();
+    }
+    private void GoInside()
+    {
+        indoors.SetActive(true);
+        outdoors.SetActive(false);
+        area = Area.Inside;
+        TransitionOn();
+        player.SetY(5.0f);
+        player.Disable();
+
+    }
+    private void TransitionOn()
+    {
+        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 1);
+
+    }
+    private void TransitionOff()
+    {
+        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
+
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+       if (lockcount != 0)
+        {
+
+        }
+        else {
+            StartCoroutine(LoadTheArea());
+
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.name == "PlayerCharacter")
         {
             if(area == Area.Inside)
             {
-                indoors.SetActive(false);
-                outdoors.SetActive(true);
-                area = Area.Outside;
+                GoOutside();
             }
             else
             {
-                indoors.SetActive(true);
-                outdoors.SetActive(false);
-                area = Area.Inside;
+                GoInside();
             }
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        StartCoroutine(LoadTheArea());
+  
+    }
+    private IEnumerator LoadTheArea()
+    {
+        yield return new WaitForSeconds(1);
+        TransitionOff();
+        yield return new WaitForSeconds(0.2f);
+        
+        player.Enable();
+
+    }
+
 
 }

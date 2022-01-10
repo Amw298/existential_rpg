@@ -27,6 +27,7 @@ public class GhostMover : MonoBehaviour
         Interrogation,
         Laptop,
         Intro,
+        Disable,
     }
     private enum InteractableType
     {
@@ -55,7 +56,10 @@ public class GhostMover : MonoBehaviour
     }
     public void OnGhostMove(InputAction.CallbackContext context)
     {
-
+        if(inputState == InputState.Disable)
+        {
+            SetGhostDirection(new Vector2(0, 0));
+        }
         if (inputState == InputState.Overworld)
         {
             SetGhostDirection(context.ReadValue<Vector2>());
@@ -80,6 +84,11 @@ public class GhostMover : MonoBehaviour
     {
         this.direction = direction;
     }
+    public void SetY(float y)
+    {
+        transform.position = new Vector3(transform.position.x, y ,transform.position.z);
+    }
+
     public void OnLoadFightScene()
     {
         SceneManager.LoadScene(1);
@@ -172,5 +181,13 @@ public class GhostMover : MonoBehaviour
     public bool CoffeeMachine()
     {
         return interactableType == InteractableType.CoffeeMachine;
+    }
+    public void Disable()
+    {
+        inputState = InputState.Disable;
+    }
+    public void Enable()
+    {
+        inputState = InputState.Overworld;
     }
 }

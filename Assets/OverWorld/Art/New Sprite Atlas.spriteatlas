@@ -47,11 +47,16 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
     - {fileID: 2800000, guid: afd2adabd2e38334780015e21dc7536e, type: 3}
     - {fileID: 2800000, guid: ed47ad2330b247e4993a2ac7009ee820, type: 3}
+    - {fileID: 2800000, guid: 51c6ee60d1dcd98478d8cc9a54390ada, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: -2656324371522367893, guid: 51c6ee60d1dcd98478d8cc9a54390ada, type: 3}
+  - {fileID: -1396483287286313306, guid: 51c6ee60d1dcd98478d8cc9a54390ada, type: 3}
+  - {fileID: 1783640835874756645, guid: 51c6ee60d1dcd98478d8cc9a54390ada, type: 3}
+  - {fileID: 4369560171034777531, guid: 51c6ee60d1dcd98478d8cc9a54390ada, type: 3}
   - {fileID: 2473540437737637836, guid: ed47ad2330b247e4993a2ac7009ee820, type: 3}
   - {fileID: 503196278654039644, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
   - {fileID: -630964425889175585, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
@@ -100,6 +105,10 @@ SpriteAtlas:
   - {fileID: 9170484151845500073, guid: 7ccddcef766985445b9c474dc3f3f371, type: 3}
   - {fileID: 5233059091062700187, guid: 7ccddcef766985445b9c474dc3f3f371, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Roads_1
+  - Roads_0
+  - Roads_3
+  - Roads_2
   - Rood_0
   - Mainchar_1
   - Mainchar_0
