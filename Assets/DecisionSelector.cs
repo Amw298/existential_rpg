@@ -13,7 +13,7 @@ public class DecisionSelector : MonoBehaviour
     private int currentDecision;
 
     private void OnEnable()
-    { 
+    {
         currentDecision = 0;
     }
     private void Update()
@@ -43,7 +43,7 @@ public class DecisionSelector : MonoBehaviour
     }
     public void HighlightText(int HighlightedMove)
     {
-        
+
         for (int i = 0; i < decisionsText.Count; i++)
         {
             if (i == HighlightedMove)
@@ -52,19 +52,19 @@ public class DecisionSelector : MonoBehaviour
             }
             else
             {
-               decisionsText[i].color = Color.white;
+                decisionsText[i].color = Color.white;
             }
         }
     }
     public void SelectDecision()
     {
-        Debug.Log( "i am deciding" +deciding);
+
         if (deciding)
         {
-            
+
             dialogManager.SelectDecision(currentDecision);
-          //  dialogManager.DisplayNextSentence();
-            
+            //  dialogManager.DisplayNextSentence();
+
         }
         else
         {
@@ -84,10 +84,11 @@ public class DecisionSelector : MonoBehaviour
     {
         deciding = false;
         currentDecision = 0;
-        foreach (TMP_Text t in decisionsText){
+        foreach (TMP_Text t in decisionsText)
+        {
             t.text = "";
         }
         decisionsText[0].text = "";
     }
-    
+
 }
