@@ -21,7 +21,7 @@ public class DialogManager : MonoBehaviour
     public PlayerInput pi;
     public GhostMover gm;
     public bool inTag;
-    public bool isTyping;
+    public bool isTyping=false;
     public bool isInteracting;
     public bool decisionToBeMade;
     public Dialog currentDialog;
@@ -30,7 +30,8 @@ public class DialogManager : MonoBehaviour
     public LinkedList<Dialog> recentlyUsedDialogs;
     public Door door;
     public CoffeeMachine cm;
-
+    public float textSpeed = 0.2f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +42,7 @@ public class DialogManager : MonoBehaviour
         canvas = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<Canvas>();
         sentences = new Queue<string>();
         recentlyUsedDialogs = new LinkedList<Dialog>();
+
 
     }
 
@@ -181,15 +183,17 @@ public class DialogManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
-
+   
     IEnumerator TypeSentence(string sentence)
     {
+        isTyping = true;
         dialogText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             dialogText.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(textSpeed);
         }
+        isTyping = false;
 
     }
     public event EventHandler OnTextEffect;

@@ -96,34 +96,48 @@ public class GhostMover : MonoBehaviour
     }
     public void OnInteract(InputAction.CallbackContext context)
     {
-        if (context.canceled && inputState == InputState.Overworld)
-        {
-            if (interactableType == InteractableType.Laptop)
-            {
-                Debug.Log("interacting with laptop");
-                FindObjectOfType<DialogManager>().StartDialog(dialog);
-                // richie do stuff
-                // make a Laptop manager or something and use the laptop input state to make you able to use the laptop. 
-            }
-            else if (interactableType == InteractableType.CoffeeMachine)
-            {
-                FindObjectOfType<DialogManager>().StartDialog(dialog, coffeeMachine);
-            }
-            else
-            {
-                FindObjectOfType<DialogManager>().StartDialog(dialog);
-            }
+        dialogManager = FindObjectOfType<DialogManager>();
 
+        if (dialogManager.isTyping && context.performed)
+        {
+            dialogManager.textSpeed = 0.001f;
         }
-        else if (context.canceled && inputState == InputState.Interrogation)
+        else
+        if (context.started && inputState == InputState.Overworld)
+        {
+
+
+            if (!dialogManager.isTyping)
+            {
+                if (interactableType == InteractableType.Laptop)
+                {
+                    //Debug.Log("interacting with laptop");
+                    dialogManager.StartDialog(dialog);
+                    // richie do stuff
+                    // make a Laptop manager or something and use the laptop input state to make you able to use the laptop. 
+                }
+                else if (interactableType == InteractableType.CoffeeMachine)
+                {
+                    dialogManager.StartDialog(dialog, coffeeMachine);
+                }
+                else
+                {
+                    dialogManager.StartDialog(dialog);
+                }
+            }
+        }
+        else if (context.started && inputState == InputState.Interrogation)
         {
             moveSelector.SelectMove();
         }
-        else if (context.canceled && inputState == InputState.Dialog)
+        else if (context.started && inputState == InputState.Dialog)
         {
-            decisionSelector.SelectDecision();
+            if (!dialogManager.isTyping)
+            {
+                decisionSelector.SelectDecision();
+            }
         }
-        else if (context.canceled && inputState == InputState.Intro)
+        else if (context.started && inputState == InputState.Intro)
         {
             introManager.FadeOutIntro();
             if (introManager.backround.color.a < 0.1f)
@@ -131,7 +145,11 @@ public class GhostMover : MonoBehaviour
                 inputState = InputState.Overworld;
             }
         }
+        if (context.canceled)
+        {
+            FindObjectOfType<DialogManager>().textSpeed = 0.02f;
 
+        }
 
     }
     public void SetDialog(Dialog d)

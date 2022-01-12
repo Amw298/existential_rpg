@@ -52851,6 +52851,7 @@ MonoBehaviour:
   decisionSelector: {fileID: 415211202}
   door: {fileID: 0}
   cm: {fileID: 0}
+  textSpeed: 0.02
 --- !u!4 &941956283
 Transform:
   m_ObjectHideFlags: 0
@@ -59441,7 +59442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f5426f6aa2077f4a8ee2c5718b64fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 11400000, guid: 8fb60d7221f71934abaed0a0122a3b6b, type: 2}
+  dialog: {fileID: 11400000, guid: 5c41aaf360ced0641b943129deec8364, type: 2}
   defaultDialog: {fileID: 11400000, guid: d155e29354e0d884cb006f88f3a084d3, type: 2}
 --- !u!61 &1929856046
 BoxCollider2D:
