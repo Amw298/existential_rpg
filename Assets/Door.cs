@@ -105,7 +105,9 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "PlayerCharacter")
+        AkSoundEngine.PostEvent("DoorOpen", this.gameObject);
+
+        if (collision.name == "PlayerCharacter")
         {
             if(area == Area.Inside)
             {

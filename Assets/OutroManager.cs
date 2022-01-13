@@ -23,11 +23,10 @@ public class OutroManager : MonoBehaviour
 
         {
             i++;
-            if (i > 1)
+            if (i > 2)
             {
                 i = 0;
             }
-            Debug.Log(i);
             SceneManager.LoadScene(i);
             //   FindObjectOfType<DialogManager>().SetInteracting(true);
         }
