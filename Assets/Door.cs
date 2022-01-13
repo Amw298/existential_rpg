@@ -57,6 +57,7 @@ public class Door : MonoBehaviour
             {
                 GetComponent<Collider2D>().isTrigger = true;
                 GoOutside();
+                AkSoundEngine.PostEvent("DoorOpen", this.gameObject);
             }
         }
     }
@@ -127,7 +128,13 @@ public class Door : MonoBehaviour
         yield return new WaitForSeconds(1);
         TransitionOff();
         yield return new WaitForSeconds(0.2f);
-        
+        if (area == Area.Outside) {
+            AkSoundEngine.SetState("Area", "Outside");
+        }
+        else
+        {
+            AkSoundEngine.SetState("Area", "Inside");
+        }
         player.Enable();
 
     }

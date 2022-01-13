@@ -10,7 +10,7 @@ public class Laptop : InteractableNPC
         {
             GhostMover gm = FindObjectOfType<GhostMover>();
             gm.SetDialog(dialog);
-            gm.EnableLaptop();
+            gm.EnableLaptop(); gm.SetInteractable(this.gameObject);
         }
     }
 
@@ -22,6 +22,7 @@ public class Laptop : InteractableNPC
             
               gm.SetDialog(defaultDialog);
             gm.DisableLaptop();
+            gm.SetInteractable(collision.gameObject);
 
         }
     }

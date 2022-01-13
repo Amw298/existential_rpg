@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -18,8 +19,11 @@ public class GhostMover : MonoBehaviour
     private InputState inputState;
     private IntroManager introManager;
     private CoffeeMachine coffeeMachine;
-
-    
+    private GameObject interactable;
+    public void SetInteractable(GameObject gameObject)
+    {
+        interactable = gameObject;
+    }
     private enum InputState
     {
         Overworld,
@@ -39,9 +43,10 @@ public class GhostMover : MonoBehaviour
     {
         // inputState = InputState.Interrogation;
         //transform.position = savedPosition;
-
+        AkSoundEngine.PostEvent("GameStart", this.gameObject);
         pi = gameObject.GetComponent<PlayerInput>();
         introManager = FindObjectOfType<IntroManager>();
+        SetInteractable(this.gameObject);
     }
 
     // Update is called once per frame
@@ -105,24 +110,30 @@ public class GhostMover : MonoBehaviour
         else
         if (context.started && inputState == InputState.Overworld)
         {
-
-
+            AkSoundEngine.PostEvent("DialogStart" + interactable.name, interactable);
             if (!dialogManager.isTyping)
             {
+                //dialogManager.StartDialog(interactable.GetComponent<InteractableNPC>().dialog);
+                //AkSoundEngine.PostEvent("StartDialogMisc", interactable);
+
                 if (interactableType == InteractableType.Laptop)
                 {
                     //Debug.Log("interacting with laptop");
                     dialogManager.StartDialog(dialog);
+                    //AkSoundEngine.PostEvent("StartDialogLaptop",this.gameObject);
+
                     // richie do stuff
                     // make a Laptop manager or something and use the laptop input state to make you able to use the laptop. 
                 }
                 else if (interactableType == InteractableType.CoffeeMachine)
                 {
                     dialogManager.StartDialog(dialog, coffeeMachine);
+                   // AkSoundEngine.PostEvent("StartDialogCoffeeMachine", this.gameObject);
                 }
                 else
                 {
                     dialogManager.StartDialog(dialog);
+
                 }
             }
         }
@@ -152,6 +163,7 @@ public class GhostMover : MonoBehaviour
         }
 
     }
+
     public void SetDialog(Dialog d)
     {
         dialog = d;
