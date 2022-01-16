@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 27155a69e6abaa4a8bc7254bf7a0ee25
     GuidInternal: 
-    m_lastTime: -8585596518355142779
+    m_lastTime: -8585593179346966851
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 842e1212bed027468eabe21a3e541fb5
     GuidInternal: 
-    m_lastTime: -8585596518356122919
+    m_lastTime: -8585593179347036873
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 08be4e1660b02b40ab37db553f32cdf2
     GuidInternal: 
-    m_lastTime: -8585596518359775130
-    List: []
+    m_lastTime: -8585593087413277425
+    List:
+    - name: Main
+      guid: bdb23003fb6a5440af0c2b603f83aee3
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 08be4e1660b02b40ab37db553f32cdf2
+      - ElementName: Main
+        ObjectType: 7
+        guid: bdb23003fb6a5440af0c2b603f83aee3
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,159 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f2b8be7aae3ff479d5064667b564177
     GuidInternal: 
-    m_lastTime: -8585596518355802826
-    List: []
+    m_lastTime: -8585593087413297426
+    List:
+    - name: DialogStartBed
+      guid: 69b2a110a2d3ca4d956899e7666f20f4
+      id: 165295640
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: DialogStartBed
+        ObjectType: 3
+        guid: 69b2a110a2d3ca4d956899e7666f20f4
+      Path: Events\Default Work Unit\Interactables\DialogStartBed
+      maxAttenuation: 0
+      maxDuration: 2.147957
+      minDuration: 2.147957
+    - name: DialogStartCoffeeMachine
+      guid: 61a8ab9ae548f846ba704e21eaa4eee0
+      id: 3203094690
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: DialogStartCoffeeMachine
+        ObjectType: 3
+        guid: 61a8ab9ae548f846ba704e21eaa4eee0
+      Path: Events\Default Work Unit\Interactables\DialogStartCoffeeMachine
+      maxAttenuation: 0
+      maxDuration: 3.393678
+      minDuration: 3.393678
+    - name: DialogStartLappy
+      guid: b9ae84592d6a034cbd01d7e29ad5dfaa
+      id: 4042399731
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: DialogStartLappy
+        ObjectType: 3
+        guid: b9ae84592d6a034cbd01d7e29ad5dfaa
+      Path: Events\Default Work Unit\Interactables\DialogStartLappy
+      maxAttenuation: 0
+      maxDuration: 0.521083
+      minDuration: 0.521083
+    - name: DialogStartNews
+      guid: 3955d3307b4de847925d8b9f8f1611e0
+      id: 3406973798
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: DialogStartNews
+        ObjectType: 3
+        guid: 3955d3307b4de847925d8b9f8f1611e0
+      Path: Events\Default Work Unit\Interactables\DialogStartNews
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DialogStartTodolist
+      guid: 8c6da1dc50cae34ba16f34b9144fddca
+      id: 1254152031
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: DialogStartTodolist
+        ObjectType: 3
+        guid: 8c6da1dc50cae34ba16f34b9144fddca
+      Path: Events\Default Work Unit\Interactables\DialogStartTodolist
+      maxAttenuation: 0
+      maxDuration: 0.639475
+      minDuration: 0.639475
+    - name: DoorOpen
+      guid: 420ca0451e46154eb3e084d91ed30f6c
+      id: 1404805401
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: DoorOpen
+        ObjectType: 3
+        guid: 420ca0451e46154eb3e084d91ed30f6c
+      Path: Events\Default Work Unit\DoorOpen
+      maxAttenuation: 0
+      maxDuration: 1.63669
+      minDuration: 1.63669
+    - name: GameStart
+      guid: 86fc56f9fb1b8043a0e2929796a5d41a
+      id: 4058101365
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: GameStart
+        ObjectType: 3
+        guid: 86fc56f9fb1b8043a0e2929796a5d41a
+      Path: Events\Default Work Unit\GameStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Interactables
+      guid: ce3b19e287d77346a4dba93295dcca20
+      id: 181270742
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      Path: Events\Default Work Unit\Interactables
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +259,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7d5fe2c7446ac9409c9a74d6eeebf659
     GuidInternal: 
-    m_lastTime: -8585596518356973777
+    m_lastTime: -8585593179347129040
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +273,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8961de80eba7d64ab202e7bc86ade8db
     GuidInternal: 
-    m_lastTime: -8585596518356845107
+    m_lastTime: -8585593179346986855
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +287,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: d2e7680339a7d14b802472451ce06e01
     GuidInternal: 
-    m_lastTime: -8585596518355662609
+    m_lastTime: -8585593179346976854
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,10 +301,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ed0ab5a56129304f98a3a4a40ccce93b
     GuidInternal: 
-    m_lastTime: -8585596518359092803
+    m_lastTime: -8585593179346976854
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 090000000a0000000c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

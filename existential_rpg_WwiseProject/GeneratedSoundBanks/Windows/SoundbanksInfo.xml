@@ -1,20 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Adam Wachowicz\Unity-Projects\existential_rpg\existential_rpg_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Adam Wachowicz\Unity-Projects\existential_rpg\existential_rpg_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Adam Wachowicz\Unity-Projects\existential_rpg\existential_rpg_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Adam Wachowicz\Unity-Projects\existential_rpg\existential_rpg_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2591535158">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="73341291">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="165295640" Name="DialogStartBed" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartBed" DurationType="OneShot" DurationMin="2.147957" DurationMax="2.147957"/>
+				<Event Id="3203094690" Name="DialogStartCoffeeMachine" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartCoffeeMachine" DurationType="OneShot" DurationMin="3.393678" DurationMax="3.393678"/>
+				<Event Id="4042399731" Name="DialogStartLappy" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartLappy" DurationType="OneShot" DurationMin="0.521083" DurationMax="0.521083"/>
+				<Event Id="3406973798" Name="DialogStartNews" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartNews" DurationType="Infinite"/>
+				<Event Id="1254152031" Name="DialogStartTodolist" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartTodolist" DurationType="OneShot" DurationMin="0.639475" DurationMax="0.639475"/>
+				<Event Id="1404805401" Name="DoorOpen" ObjectPath="\Events\Default Work Unit\DoorOpen" DurationType="OneShot" DurationMin="1.636690" DurationMax="1.636690"/>
+				<Event Id="4058101365" Name="GameStart" ObjectPath="\Events\Default Work Unit\GameStart" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="16327500" Language="SFX">
+					<ShortName>Doors, Wood, Open, Squeak, Close, Slam SND11376.wav</ShortName>
+					<Path>SFX\Doors, Wood, Open, Squeak, Close, Slam SND11376_F8263FB8.wem</Path>
+				</File>
+				<File Id="43142548" Language="SFX">
+					<ShortName>Birds, Songbird, Chirping, Close, Single 01 SND40684.wav</ShortName>
+					<Path>SFX\Birds, Songbird, Chirping, Close, Single 01 SND40684_10C4C929.wem</Path>
+				</File>
+				<File Id="183984303" Language="SFX">
+					<ShortName>Paper, Handle, Thin, Handling 02 SND4134.wav</ShortName>
+					<Path>SFX\Paper, Handle, Thin, Handling 02 SND4134_F52A528D.wem</Path>
+				</File>
+				<File Id="233714797" Language="SFX">
+					<ShortName>Birds, Songbird, Chirping, Close, Single 02 SND40683.wav</ShortName>
+					<Path>SFX\Birds, Songbird, Chirping, Close, Single 02 SND40683_10C4C929.wem</Path>
+				</File>
+				<File Id="309471613" Language="SFX">
+					<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
+					<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_040C8AE2.wem</Path>
+				</File>
+				<File Id="452708341" Language="SFX">
+					<ShortName>Wind Whistle.wav</ShortName>
+					<Path>SFX\Wind Whistle_32E3816E.wem</Path>
+				</File>
+				<File Id="455980648" Language="SFX">
+					<ShortName>Doors, Wood, Open, Squeak, Close, Slam SND11376.wav</ShortName>
+					<Path>SFX\Doors, Wood, Open, Squeak, Close, Slam SND11376_E775CD02.wem</Path>
+				</File>
+				<File Id="495139559" Language="SFX">
+					<ShortName>Birds, Songbird, Chirping, Close, Single 03 SND40682.wav</ShortName>
+					<Path>SFX\Birds, Songbird, Chirping, Close, Single 03 SND40682_10C4C929.wem</Path>
+				</File>
+				<File Id="642230101" Language="SFX">
+					<ShortName>User Interface, Beep, Computer, Digital Beep, Short SND11436.wav</ShortName>
+					<Path>SFX\User Interface, Beep, Computer, Digital Beep, Short SND11436_10C4C929.wem</Path>
+				</File>
+				<File Id="662218837" Language="SFX">
+					<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
+					<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_B60D078A.wem</Path>
+				</File>
+				<File Id="748097432" Language="SFX">
+					<ShortName>Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588.wav</ShortName>
+					<Path>SFX\Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588_C6CFB18B.wem</Path>
+				</File>
+				<File Id="766819087" Language="SFX">
+					<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
+					<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_7288C3F9.wem</Path>
+				</File>
+				<File Id="788425589" Language="SFX">
+					<ShortName>Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648.wav</ShortName>
+					<Path>SFX\Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648_87897D4D.wem</Path>
+				</File>
+				<File Id="1007428521" Language="SFX">
+					<ShortName>Wind Whistle.wav</ShortName>
+					<Path>SFX\Wind Whistle_AF39A190.wem</Path>
+				</File>
+				<File Id="1051067700" Language="SFX">
+					<ShortName>Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585.wav</ShortName>
+					<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_AA6528AC.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
