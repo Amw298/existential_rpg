@@ -24,6 +24,11 @@ public class GhostMover : MonoBehaviour
     {
         interactable = gameObject;
     }
+    public bool isCoffee()
+    {
+        Debug.Log(interactable.name.Equals("CoffeeMachine"));
+        return interactable.name.Equals("CoffeeMachine");
+    }
     private enum InputState
     {
         Overworld,
@@ -52,6 +57,7 @@ public class GhostMover : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        Debug.Log(interactable);
         if (inputState == InputState.Overworld)
         {
             transform.position += direction * 10f * Time.fixedDeltaTime;
@@ -128,6 +134,7 @@ public class GhostMover : MonoBehaviour
                 else if (interactableType == InteractableType.CoffeeMachine)
                 {
                     dialogManager.StartDialog(dialog, coffeeMachine);
+                    Debug.Log("happening");
                    // AkSoundEngine.PostEvent("StartDialogCoffeeMachine", this.gameObject);
                 }
                 else

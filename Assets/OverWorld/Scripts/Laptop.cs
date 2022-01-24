@@ -10,7 +10,8 @@ public class Laptop : InteractableNPC
         {
             GhostMover gm = FindObjectOfType<GhostMover>();
             gm.SetDialog(dialog);
-            gm.EnableLaptop(); gm.SetInteractable(this.gameObject);
+            gm.EnableLaptop(); 
+            gm.SetInteractable(this.gameObject);
         }
     }
 
