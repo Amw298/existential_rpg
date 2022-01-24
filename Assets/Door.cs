@@ -30,7 +30,7 @@ public class Door : MonoBehaviour
         area = Area.Inside;
         player = FindObjectOfType<GhostMover>();
         backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
-
+        AkSoundEngine.SetState("Area", "Inside");
     }
 
     // Update is called once per frame
@@ -138,8 +138,5 @@ public class Door : MonoBehaviour
             AkSoundEngine.SetState("Area", "Inside");
         }
         player.Enable();
-
     }
-
-
 }

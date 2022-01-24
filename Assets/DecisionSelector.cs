@@ -29,6 +29,7 @@ public class DecisionSelector : MonoBehaviour
         {
             if (x == 1)
             {
+            
                 currentDecision = 1;
             }
             else if (x == -1)
@@ -58,11 +59,18 @@ public class DecisionSelector : MonoBehaviour
     }
     public void SelectDecision()
     {
+        var gm = FindObjectOfType<GhostMover>();
 
         if (deciding)
         {
-
+           
+            if (gm.isCoffee() && currentDecision == 0)
+            {
+                AkSoundEngine.PostEvent("PourCoffee", this.gameObject);
+                Debug.Log("post event");
+            }
             dialogManager.SelectDecision(currentDecision);
+            
             //  dialogManager.DisplayNextSentence();
 
         }
