@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b6ed45b6b15294697b97cfa63dcb71, type: 3}
+  m_Name: 58A10391-D05B-425B-B6B3-F98630D856BF
+  m_EditorClassIdentifier: 
+  objectName: SceneEnd
+  id: 2218040726
+  guid: 58A10391-D05B-425B-B6B3-F98630D856BF

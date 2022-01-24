@@ -84,6 +84,18 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="SceneEnd" ID="{58A10391-D05B-425B-B6B3-F98630D856BF}">
+					<ChildrenList>
+						<Action Name="" ID="{38113A17-E785-4915-8CF0-4139457CAA8E}" ShortID="723869563">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
