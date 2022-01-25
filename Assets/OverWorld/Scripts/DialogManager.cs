@@ -186,10 +186,12 @@ public class DialogManager : MonoBehaviour
    
     IEnumerator TypeSentence(string sentence)
     {
+        
         isTyping = true;
         dialogText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
+            AkSoundEngine.PostEvent("TextSound", this.gameObject);
             dialogText.text += letter;
             yield return new WaitForSeconds(textSpeed);
         }

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+
 public class GhostMover : MonoBehaviour
 {
     public PlayerInput pi;
@@ -23,6 +24,7 @@ public class GhostMover : MonoBehaviour
     private bool fading;
     public void SetInteractable(GameObject gameObject)
     {
+        AkSoundEngine.SetSwitch("Interactable", gameObject.name, this.gameObject);
         interactable = gameObject;
     }
     public bool isCoffee()
