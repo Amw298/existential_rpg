@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class News : MonoBehaviour
 {
+    private bool interacted = false;
+    public void Interacted()
+    {
+        interacted = true;
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        AkSoundEngine.PostEvent("StopNews", this.gameObject);
+        if (interacted)
+        {
+            AkSoundEngine.PostEvent("StopNews", this.gameObject);
+            interacted = false;
+        }
     }
 }

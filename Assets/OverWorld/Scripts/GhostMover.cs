@@ -111,7 +111,10 @@ public class GhostMover : MonoBehaviour
     public void OnInteract(InputAction.CallbackContext context)
     {
         dialogManager = FindObjectOfType<DialogManager>();
-
+        if (interactable.name.Equals("News"))
+        {
+            interactable.GetComponent<News>().Interacted();
+        }
         if (dialogManager.isTyping && context.performed)
         {
             dialogManager.textSpeed = 0.001f;
