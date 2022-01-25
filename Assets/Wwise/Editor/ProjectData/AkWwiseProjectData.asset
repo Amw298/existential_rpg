@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f2b8be7aae3ff479d5064667b564177
     GuidInternal: 
-    m_lastTime: -8585585437478830071
+    m_lastTime: -8585585366260838537
     List:
     - name: DialogStartBed
       guid: 69b2a110a2d3ca4d956899e7666f20f4
@@ -247,6 +247,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: MusicEnd
+      guid: 7e202f4cf91151438fe826bbb41455b3
+      id: 2803552149
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: MusicEnd
+        ObjectType: 3
+        guid: 7e202f4cf91151438fe826bbb41455b3
+      Path: Events\Default Work Unit\MusicEnd
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MusicStart
+      guid: 24fb7d3bec369a428da75084363be4a3
+      id: 1122283870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: MusicStart
+        ObjectType: 3
+        guid: 24fb7d3bec369a428da75084363be4a3
+      Path: Events\Default Work Unit\MusicStart
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: SceneEnd
       guid: 9103a1585bd05b42b6b3f98630d856bf
       id: 2218040726

@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2437998237">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2915079206">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -105,6 +105,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2803552149" Name="MusicEnd" ObjectPath="\Events\Default Work Unit\MusicEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\MusicStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2218040726" Name="SceneEnd" ObjectPath="\Events\Default Work Unit\SceneEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

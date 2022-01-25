@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	165295640	DialogStartBed			\Default Work Unit\Interactables\DialogStartBed	
+	1122283870	MusicStart			\Default Work Unit\MusicStart	
 	1254152031	DialogStartTodolist			\Default Work Unit\Interactables\DialogStartTodolist	
 	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
 	2218040726	SceneEnd			\Default Work Unit\SceneEnd	
+	2803552149	MusicEnd			\Default Work Unit\MusicEnd	
 	3203094690	DialogStartCoffeeMachine			\Default Work Unit\Interactables\DialogStartCoffeeMachine	
 	3406973798	DialogStartNews			\Default Work Unit\Interactables\DialogStartNews	
 	4042399731	DialogStartLappy			\Default Work Unit\Interactables\DialogStartLappy	
