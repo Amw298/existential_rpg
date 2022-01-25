@@ -84,6 +84,30 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="SceneEnd" ID="{58A10391-D05B-425B-B6B3-F98630D856BF}">
+					<ChildrenList>
+						<Action Name="" ID="{38113A17-E785-4915-8CF0-4139457CAA8E}" ShortID="723869563">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MusicStart" ID="{3B7DFB24-36EC-429A-8DA7-5084363BE4A3}"/>
+				<Event Name="MusicEnd" ID="{4C2F207E-11F9-4351-8FE8-26BBB41455B3}">
+					<ChildrenList>
+						<Action Name="" ID="{AD048C9D-EDA7-45B9-9F1C-8D64D17503C1}" ShortID="434687668">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,30 +1,45 @@
 Event	ID	Name			Wwise Object Path	Notes
 	165295640	DialogStartBed			\Default Work Unit\Interactables\DialogStartBed	
+	1122283870	MusicStart			\Default Work Unit\MusicStart	
 	1254152031	DialogStartTodolist			\Default Work Unit\Interactables\DialogStartTodolist	
 	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
+	2218040726	SceneEnd			\Default Work Unit\SceneEnd	
+	2803552149	MusicEnd			\Default Work Unit\MusicEnd	
 	3203094690	DialogStartCoffeeMachine			\Default Work Unit\Interactables\DialogStartCoffeeMachine	
 	3406973798	DialogStartNews			\Default Work Unit\Interactables\DialogStartNews	
 	4042399731	DialogStartLappy			\Default Work Unit\Interactables\DialogStartLappy	
 	4058101365	GameStart			\Default Work Unit\GameStart	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3686139462	Area			\Default Work Unit\Area	
+
+State	ID	Name	State Group			Notes
+	438105790	Outside	Area			
+	748895195	None	Area			
+	3553349781	Inside	Area			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	331524198	Outside	Area	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience		
+	697435177	Inside	Area	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience		
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	354761123	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Birds\Silence\Wwise Silence	
-	374694948	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Air\Air\Silence\Wwise Silence	
+	374694948	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Air\Gusts\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16327500	Door Open	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Doors, Wood, Open, Squeak, Close, Slam SND11376_F8263FB8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door Open		75518
 	43142548	Birds, Songbird, Chirping, Close, Single 01 SND40684	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Birds, Songbird, Chirping, Close, Single 01 SND40684_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Birds\Birds, Songbird, Chirping, Close, Single 01 SND40684		500800
 	183984303	ToDo List	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Paper, Handle, Thin, Handling 02 SND4134_F52A528D.wem		\Actor-Mixer Hierarchy\Default Work Unit\ToDo List		61452
 	233714797	Birds, Songbird, Chirping, Close, Single 02 SND40683	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Birds, Songbird, Chirping, Close, Single 02 SND40683_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Birds\Birds, Songbird, Chirping, Close, Single 02 SND40683		514112
-	309471613	TV Static	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_040C8AE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV\TV On and Idle\TV News\TV Static		380940
-	452708341	Wind whistle	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Wind Whistle_32E3816E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Air\Air\Wind whistle		1728128
+	309471613	TV Static	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_0041C893.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV\TV On and Idle\TV News\TV Static		380940
+	452708341	Wind Whistle	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Wind Whistle_32E3816E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Air\Gusts\Wind Whistle		1728128
 	455980648	Door Close	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Doors, Wood, Open, Squeak, Close, Slam SND11376_E775CD02.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door Close		81732
 	495139559	Birds, Songbird, Chirping, Close, Single 03 SND40682	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Birds, Songbird, Chirping, Close, Single 03 SND40682_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Birds\Birds, Songbird, Chirping, Close, Single 03 SND40682		929856
 	642230101	Laptop Boot	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\User Interface, Beep, Computer, Digital Beep, Short SND11436_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Laptop Boot		50088
-	662218837	TV Turn On	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_B60D078A.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV\TV On and Idle\TV Turn On		33004
+	662218837	TV Turn On	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_791046C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV\TV On and Idle\TV Turn On		33004
 	748097432	Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588_C6CFB18B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bed\Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588		266404
-	766819087	TV Turn Off	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_7288C3F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV\TV Turn Off		48816
+	766819087	TV Turn Off	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_62E426AB.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV\TV Turn Off		48816
 	788425589	Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648_87897D4D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bed\Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648		146128
-	1007428521	Wind whistle	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Wind Whistle_AF39A190.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Air\Wind whistle		1728128
+	1007428521	Low Air	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Wind Whistle_AF39A190.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Air\Low Air		1728128
 	1051067700	Coffee Machine	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Food & Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_AA6528AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coffee Machine		325856
 
