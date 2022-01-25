@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 27155a69e6abaa4a8bc7254bf7a0ee25
     GuidInternal: 
-    m_lastTime: -8585596518355142779
+    m_lastTime: -8585592333983281438
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 842e1212bed027468eabe21a3e541fb5
     GuidInternal: 
-    m_lastTime: -8585596518356122919
+    m_lastTime: -8585585375602278703
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 08be4e1660b02b40ab37db553f32cdf2
     GuidInternal: 
-    m_lastTime: -8585585362652674332
+    m_lastTime: -8585585437478860080
     List:
     - name: Main
       guid: bdb23003fb6a5440af0c2b603f83aee3
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f2b8be7aae3ff479d5064667b564177
     GuidInternal: 
-    m_lastTime: -8585585349119893356
+    m_lastTime: -8585585351044704110
     List:
     - name: DialogStartBed
       guid: 69b2a110a2d3ca4d956899e7666f20f4
@@ -169,10 +169,13 @@ MonoBehaviour:
       - ElementName: Interactables
         ObjectType: 4
         guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: TV
+        ObjectType: 4
+        guid: 5f5ae1009a507549ae5f99f4d47da7fe
       - ElementName: DialogStartNews
         ObjectType: 3
         guid: 3955d3307b4de847925d8b9f8f1611e0
-      Path: Events\Default Work Unit\Interactables\DialogStartNews
+      Path: Events\Default Work Unit\Interactables\TV\DialogStartNews
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -298,6 +301,49 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: StopNews
+      guid: c5bc2361486ab64c8b27d893f8d85de0
+      id: 832825332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: TV
+        ObjectType: 4
+        guid: 5f5ae1009a507549ae5f99f4d47da7fe
+      - ElementName: StopNews
+        ObjectType: 3
+        guid: c5bc2361486ab64c8b27d893f8d85de0
+      Path: Events\Default Work Unit\Interactables\TV\StopNews
+      maxAttenuation: 0
+      maxDuration: 0.253931
+      minDuration: 0.253931
+    - name: TV
+      guid: 5f5ae1009a507549ae5f99f4d47da7fe
+      id: 1568083719
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: TV
+        ObjectType: 4
+        guid: 5f5ae1009a507549ae5f99f4d47da7fe
+      Path: Events\Default Work Unit\Interactables\TV
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -310,7 +356,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7d5fe2c7446ac9409c9a74d6eeebf659
     GuidInternal: 
-    m_lastTime: -8585596518356973777
+    m_lastTime: -8585592333984254881
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -324,7 +370,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8961de80eba7d64ab202e7bc86ade8db
     GuidInternal: 
-    m_lastTime: -8585585362652664028
+    m_lastTime: -8585585391750329061
     List:
     - name: Area
       guid: c5e5fc730081e6479ff131e7fb778668
@@ -404,7 +450,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: d2e7680339a7d14b802472451ce06e01
     GuidInternal: 
-    m_lastTime: -8585596518355662609
+    m_lastTime: -8585592333983291440
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -418,7 +464,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ed0ab5a56129304f98a3a4a40ccce93b
     GuidInternal: 
-    m_lastTime: -8585596518359092803
+    m_lastTime: -8585592333983281438
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

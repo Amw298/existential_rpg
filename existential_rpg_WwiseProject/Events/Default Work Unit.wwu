@@ -71,17 +71,42 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="DialogStartNews" ID="{30D35539-4D7B-47E8-925D-8B9F8F1611E0}">
+						<Folder Name="TV" ID="{00E15A5F-509A-4975-AE5F-99F4D47DA7FE}" ShortID="135788224">
 							<ChildrenList>
-								<Action Name="" ID="{DD3A2C25-9308-4636-AEF6-57CCB6AF8418}" ShortID="907383960">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="TV On and Idle" ID="{EF72F7D7-1289-47AA-8469-23577C6DE0B4}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="DialogStartNews" ID="{30D35539-4D7B-47E8-925D-8B9F8F1611E0}">
+									<ChildrenList>
+										<Action Name="" ID="{DD3A2C25-9308-4636-AEF6-57CCB6AF8418}" ShortID="907383960">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TV On and Idle" ID="{EF72F7D7-1289-47AA-8469-23577C6DE0B4}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StopNews" ID="{6123BCC5-6A48-4CB6-8B27-D893F8D85DE0}">
+									<ChildrenList>
+										<Action Name="" ID="{E90E01D1-6699-4592-B0EF-B01E67ED0EB8}" ShortID="259438439">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TV News" ID="{7C55A432-78B1-46A1-8960-248716CD719F}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E2766426-35F4-4FFA-990D-376C035EEBB5}" ShortID="252265971">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TV Turn Off" ID="{39648750-F156-4978-A40E-48F547CE5544}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Event Name="SceneEnd" ID="{58A10391-D05B-425B-B6B3-F98630D856BF}">
