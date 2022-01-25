@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="519559097">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3184279957">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -49,7 +49,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3406973798" Name="DialogStartNews" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartNews" DurationType="Infinite">
+				<Event Id="3406973798" Name="DialogStartNews" ObjectPath="\Events\Default Work Unit\Interactables\TV\DialogStartNews" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="309471613" Language="SFX">
 							<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
@@ -108,6 +108,14 @@
 				<Event Id="2803552149" Name="MusicEnd" ObjectPath="\Events\Default Work Unit\MusicEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\MusicStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2218040726" Name="SceneEnd" ObjectPath="\Events\Default Work Unit\SceneEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="832825332" Name="StopNews" ObjectPath="\Events\Default Work Unit\Interactables\TV\StopNews" DurationType="OneShot" DurationMin="0.253931" DurationMax="0.253931">
+					<IncludedMemoryFiles>
+						<File Id="766819087" Language="SFX">
+							<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
+							<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_62E426AB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="16327500" Language="SFX">
