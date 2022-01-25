@@ -52023,6 +52023,7 @@ GameObject:
   - component: {fileID: 853858327}
   - component: {fileID: 853858326}
   - component: {fileID: 853858325}
+  - component: {fileID: 853858328}
   m_Layer: 0
   m_Name: News
   m_TagString: Lock
@@ -52135,6 +52136,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &853858328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853858323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2b046a21cc3b1458e164e2e5ca5971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &855856168
 GameObject:
   m_ObjectHideFlags: 0
