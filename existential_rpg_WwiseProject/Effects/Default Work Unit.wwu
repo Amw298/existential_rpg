@@ -7,6 +7,8 @@
 	<ModeList GlobalGain="0"/>
 </PluginData>
 				</Effect>
+				<Effect Name="New_Mastering_Suite" ID="{0328EB56-0C8D-4381-BA3B-FC01CBEE213F}" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">					<PluginData/>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
