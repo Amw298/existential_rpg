@@ -29,8 +29,9 @@ public class Door : MonoBehaviour
         indoors = GameObject.FindGameObjectWithTag("indoors");
         area = Area.Inside;
         player = FindObjectOfType<GhostMover>();
-        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
         AkSoundEngine.SetState("Area", "Inside");
+
+        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
     }
 
     // Update is called once per frame

@@ -11,18 +11,20 @@ public class IntroManager : MonoBehaviour
     public TMP_Text description;
     public Image backround;
     private GhostMover gm;
+    private AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
         gm = FindObjectOfType<GhostMover>();
         gm.EnableIntro();
+        audioManager = FindObjectOfType<AudioManager>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-
+       
  
     }
     public void FadeOutIntro()
@@ -30,6 +32,7 @@ public class IntroManager : MonoBehaviour
         StartCoroutine(FadeOutText(3, heading));
         StartCoroutine(FadeOutText(2, description));
         StartCoroutine(FadeOutBackround(7, backround));
+        audioManager.SceneStart();
     }
     public IEnumerator FadeOutText(float time, TMP_Text text)
     {
@@ -40,6 +43,7 @@ public class IntroManager : MonoBehaviour
             yield return null;
 
         }
+       
     }
     public IEnumerator FadeOutBackround(float time, Image backround)
     {
@@ -51,5 +55,6 @@ public class IntroManager : MonoBehaviour
             yield return null;
 
         }
+        
     }
 }

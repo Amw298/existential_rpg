@@ -20,6 +20,7 @@ public class GhostMover : MonoBehaviour
     private IntroManager introManager;
     private CoffeeMachine coffeeMachine;
     private GameObject interactable;
+    private bool fading;
     public void SetInteractable(GameObject gameObject)
     {
         interactable = gameObject;
@@ -44,11 +45,13 @@ public class GhostMover : MonoBehaviour
         Misc,
         CoffeeMachine
     }
+
     void Start()
     {
         // inputState = InputState.Interrogation;
         //transform.position = savedPosition;
         AkSoundEngine.PostEvent("GameStart", this.gameObject);
+        fading = false;
         pi = gameObject.GetComponent<PlayerInput>();
         introManager = FindObjectOfType<IntroManager>();
         SetInteractable(this.gameObject);
@@ -157,7 +160,11 @@ public class GhostMover : MonoBehaviour
         }
         else if (context.started && inputState == InputState.Intro)
         {
-            introManager.FadeOutIntro();
+            if (fading == false)
+            {
+                introManager.FadeOutIntro();
+                fading = true;
+            }
             if (introManager.backround.color.a < 0.1f)
             {
                 inputState = InputState.Overworld;
