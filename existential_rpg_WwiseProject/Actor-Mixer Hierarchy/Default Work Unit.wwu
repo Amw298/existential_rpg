@@ -869,7 +869,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -896,6 +896,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Coffee Machine" ID="{4BE74C5D-8A62-434F-8017-115CFD25D764}" ShortID="321688953">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
@@ -907,12 +914,12 @@
 							<ChildrenList>
 								<AudioFileSource Name="Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585" ID="{E68978B0-E0BA-4C27-B72E-5F01AEAE65F8}">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.406871507707129"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="2.78337099590559"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.212682833574181"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.68296850915222"/>
 										<Property Name="FadeOutShape" Type="int16" Value="6"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.35138902938343"/>
-										<Property Name="TrimEnd" Type="Real64" Value="3.74506728684973"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.601060181840077"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.76487683646437"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585.wav</AudioFile>
@@ -930,11 +937,6 @@
 							<PropertyList>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1036,10 +1038,69 @@
 								<ItemRef Name="Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588" ID="{7DD7A870-418E-4E7E-B138-D2F10BBB498B}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+						<Sound Name="The Mess" ID="{07EE4621-5F6B-403F-B642-A2EC497F4563}" ShortID="126728124">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>31</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D862C9A8-B1AC-4DA9-95A1-4B5CCFA3BE8E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1" ID="{1D1F75B4-5193-4741-BE17-99130261C301}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0251189185934489"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.97937078516378"/>
+										<Property Name="FadeOutShape" Type="int16" Value="7"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="677176813"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1" ID="{1D1F75B4-5193-4741-BE17-99130261C301}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
-				<ActorMixer Name="New Actor-Mixer" ID="{CD2D4C06-EACA-4C3E-AF33-144021C4853B}" ShortID="942724307">
+				<ActorMixer Name="Text UI" ID="{CD2D4C06-EACA-4C3E-AF33-144021C4853B}" ShortID="942724307">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="12"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -1131,11 +1192,6 @@
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

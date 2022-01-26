@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f2b8be7aae3ff479d5064667b564177
     GuidInternal: 
-    m_lastTime: -8585584363837847832
+    m_lastTime: -8585583695642837029
     List:
     - name: DialogStartBed
       guid: 69b2a110a2d3ca4d956899e7666f20f4
@@ -116,26 +116,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.147957
       minDuration: 2.147957
-    - name: DialogStartCoffeeMachine
-      guid: 61a8ab9ae548f846ba704e21eaa4eee0
-      id: 3203094690
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 6f2b8be7aae3ff479d5064667b564177
-      - ElementName: Interactables
-        ObjectType: 4
-        guid: ce3b19e287d77346a4dba93295dcca20
-      - ElementName: DialogStartCoffeeMachine
-        ObjectType: 3
-        guid: 61a8ab9ae548f846ba704e21eaa4eee0
-      Path: Events\Default Work Unit\Interactables\DialogStartCoffeeMachine
-      maxAttenuation: 0
-      maxDuration: 3.393678
-      minDuration: 3.393678
     - name: DialogStartLappy
       guid: b9ae84592d6a034cbd01d7e29ad5dfaa
       id: 4042399731
@@ -156,6 +136,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.521083
       minDuration: 0.521083
+    - name: DialogStartMess
+      guid: a2487c555ce6574886cd95c92c624624
+      id: 2401650427
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: DialogStartMess
+        ObjectType: 3
+        guid: a2487c555ce6574886cd95c92c624624
+      Path: Events\Default Work Unit\Interactables\DialogStartMess
+      maxAttenuation: 0
+      maxDuration: 3.683179
+      minDuration: 3.37749
     - name: DialogStartNews
       guid: 3955d3307b4de847925d8b9f8f1611e0
       id: 3406973798
@@ -284,6 +284,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PourCoffee
+      guid: 61a8ab9ae548f846ba704e21eaa4eee0
+      id: 2037790311
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: PourCoffee
+        ObjectType: 3
+        guid: 61a8ab9ae548f846ba704e21eaa4eee0
+      Path: Events\Default Work Unit\Interactables\PourCoffee
+      maxAttenuation: 0
+      maxDuration: 2.163817
+      minDuration: 2.163817
     - name: SceneEnd
       guid: 9103a1585bd05b42b6b3f98630d856bf
       id: 2218040726

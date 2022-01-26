@@ -4,10 +4,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1122283870	MusicStart			\Default Work Unit\MusicStart	
 	1254152031	DialogStartTodolist			\Default Work Unit\Interactables\DialogStartTodolist	
 	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
+	2037790311	PourCoffee			\Default Work Unit\Interactables\PourCoffee	
 	2218040726	SceneEnd			\Default Work Unit\SceneEnd	
+	2401650427	DialogStartMess			\Default Work Unit\Interactables\DialogStartMess	
 	2803552149	MusicEnd			\Default Work Unit\MusicEnd	
 	2992915453	TextSound			\Default Work Unit\TextSound	
-	3203094690	DialogStartCoffeeMachine			\Default Work Unit\Interactables\DialogStartCoffeeMachine	
 	3406973798	DialogStartNews			\Default Work Unit\Interactables\TV\DialogStartNews	
 	4042399731	DialogStartLappy			\Default Work Unit\Interactables\DialogStartLappy	
 	4058101365	GameStart			\Default Work Unit\GameStart	
@@ -33,7 +34,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16327500	Door Open	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Doors, Wood, Open, Squeak, Close, Slam SND11376_F8263FB8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door Open		75518
 	43142548	Birds, Songbird, Chirping, Close, Single 01 SND40684	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Birds, Songbird, Chirping, Close, Single 01 SND40684_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Birds\Birds, Songbird, Chirping, Close, Single 01 SND40684		500800
 	53618860	Alarm	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Alarms, Clock, Digital, Beeping 01 SND24821_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alarm		772396
-	108327916	Beeps, General, Terminal, Soft SND6596	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Beeps, General, Terminal, Soft SND6596_AC4F3A1F.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Actor-Mixer\Beeps, General, Terminal, Soft SND6596		6584
+	108327916	Beeps, General, Terminal, Soft SND6596	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Beeps, General, Terminal, Soft SND6596_AC4F3A1F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Text UI\Beeps, General, Terminal, Soft SND6596		6584
 	183984303	ToDo List	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Paper, Handle, Thin, Handling 02 SND4134_F52A528D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\ToDo List		61452
 	233714797	Birds, Songbird, Chirping, Close, Single 02 SND40683	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Birds, Songbird, Chirping, Close, Single 02 SND40683_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Birds\Birds, Songbird, Chirping, Close, Single 02 SND40683		514112
 	309471613	TV Static	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_D838B8B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\TV\TV On and Idle\TV Static		380940
@@ -47,11 +48,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	642230101	Laptop Boot	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\User Interface, Beep, Computer, Digital Beep, Short SND11436_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\Laptop Boot		50088
 	660872421	Melody	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Day to Day Melody_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Day to Day\A Section\Melody		14887452
 	662218837	TV Turn On	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_791046C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\TV\TV On and Idle\TV Turn On		33004
+	677176813	The Mess	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1_4B772CA5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\The Mess		667544
 	748097432	Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588_C6CFB18B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\Bed\Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588		266404
 	766819087	TV Turn Off	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_62E426AB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\TV\TV Turn Off		48816
 	788425589	Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648_87897D4D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\Bed\Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648		146128
 	841667161	Clocks, Tick, Grandfather Clock 02 SND12579	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Clocks, Tick, Grandfather Clock 02 SND12579_D83F2515.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Indoor Ambience\Clocks, Tick, Grandfather Clock 02 SND12579		5760128
 	943570972	Drums	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Day to Day Drums_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Day to Day\A Section\Drums		14887452
 	1007428521	Low Air	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Wind Whistle_C77BD399.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Air\Low Air		1728128
-	1051067700	Coffee Machine	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Food & Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_AA6528AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\Coffee Machine		325856
+	1051067700	Coffee Machine	C:\Users\antde\Documents\Adam Games\existential_rpg\existential_rpg_WwiseProject\.cache\Mac\SFX\Food & Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_7CA8EAF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\Coffee Machine		207790
 

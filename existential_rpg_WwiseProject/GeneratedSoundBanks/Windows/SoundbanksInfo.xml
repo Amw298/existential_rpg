@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1274910404">
+		<SoundBank Id="3161908922" Language="SFX" Hash="423375926">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -33,19 +33,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3203094690" Name="DialogStartCoffeeMachine" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartCoffeeMachine" DurationType="OneShot" DurationMin="3.393678" DurationMax="3.393678">
-					<IncludedMemoryFiles>
-						<File Id="1051067700" Language="SFX">
-							<ShortName>Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585.wav</ShortName>
-							<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_AA6528AC.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="4042399731" Name="DialogStartLappy" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartLappy" DurationType="OneShot" DurationMin="0.521083" DurationMax="0.521083">
 					<IncludedMemoryFiles>
 						<File Id="642230101" Language="SFX">
 							<ShortName>User Interface, Beep, Computer, Digital Beep, Short SND11436.wav</ShortName>
 							<Path>SFX\User Interface, Beep, Computer, Digital Beep, Short SND11436_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2401650427" Name="DialogStartMess" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartMess" DurationType="OneShot" DurationMin="3.377490" DurationMax="3.683179">
+					<IncludedMemoryFiles>
+						<File Id="677176813" Language="SFX">
+							<ShortName>Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1.wav</ShortName>
+							<Path>SFX\Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1_4B772CA5.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -142,6 +142,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2037790311" Name="PourCoffee" ObjectPath="\Events\Default Work Unit\Interactables\PourCoffee" DurationType="OneShot" DurationMin="2.163817" DurationMax="2.163817">
+					<IncludedMemoryFiles>
+						<File Id="1051067700" Language="SFX">
+							<ShortName>Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585.wav</ShortName>
+							<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_7CA8EAF9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2218040726" Name="SceneEnd" ObjectPath="\Events\Default Work Unit\SceneEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="832825332" Name="StopNews" ObjectPath="\Events\Default Work Unit\Interactables\TV\StopNews" DurationType="OneShot" DurationMin="0.253931" DurationMax="0.253931">
 					<IncludedMemoryFiles>
@@ -229,6 +237,10 @@
 					<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
 					<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_791046C3.wem</Path>
 				</File>
+				<File Id="677176813" Language="SFX">
+					<ShortName>Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1.wav</ShortName>
+					<Path>SFX\Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1_4B772CA5.wem</Path>
+				</File>
 				<File Id="748097432" Language="SFX">
 					<ShortName>Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588.wav</ShortName>
 					<Path>SFX\Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588_C6CFB18B.wem</Path>
@@ -255,7 +267,7 @@
 				</File>
 				<File Id="1051067700" Language="SFX">
 					<ShortName>Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585.wav</ShortName>
-					<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_AA6528AC.wem</Path>
+					<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_7CA8EAF9.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
