@@ -74,7 +74,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="DialogStartCoffeeMachine" ID="{9AABA861-48E5-46F8-BA70-4E21EAA4EEE0}">
+						<Event Name="PourCoffee" ID="{9AABA861-48E5-46F8-BA70-4E21EAA4EEE0}">
 							<ChildrenList>
 								<Action Name="" ID="{06BB15A1-0ECD-44FF-AF67-FAA2AAE65B3D}" ShortID="800989408">
 									<ReferenceList>
@@ -121,6 +121,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="DialogStartMess" ID="{557C48A2-E65C-4857-86CD-95C92C624624}">
+							<ChildrenList>
+								<Action Name="" ID="{4221E779-6E15-4C26-873E-34D1C778358A}" ShortID="331790178">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="The Mess" ID="{07EE4621-5F6B-403F-B642-A2EC497F4563}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="SceneEnd" ID="{58A10391-D05B-425B-B6B3-F98630D856BF}">
