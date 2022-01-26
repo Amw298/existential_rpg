@@ -13,7 +13,7 @@
 						<Transition>
 							<StartState Name="Outside" ID="{067079F0-0550-44B6-81C3-4FF553A17348}"/>
 							<EndState Name="Inside" ID="{5F2A2578-8817-4EC0-8D34-EE27C69378AA}"/>
-							<Time>1</Time>
+							<Time>0.5</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>

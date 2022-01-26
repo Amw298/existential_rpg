@@ -5,10 +5,24 @@
 			<ChildrenList>
 				<Event Name="GameStart" ID="{F956FC86-1BFB-4380-A0E2-929796A5D41A}">
 					<ChildrenList>
+						<Action Name="" ID="{C09616E8-FB73-490D-AF40-240FA4568406}" ShortID="737662740">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alarm" ID="{29E22CA2-7B66-484C-883B-882AFB7147ED}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{9E0D0F85-CD97-4C35-B245-7FD9136233F3}" ShortID="59406529">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ambience" ID="{3A6C2776-46F4-49C6-B143-B5B4D8CF67ED}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+									<ObjectRef Name="Low Air" ID="{B2AF40BF-98D4-46B9-98CD-36F404243654}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{76185A1A-1474-44BF-B0E3-9AF500AFB101}" ShortID="221237304">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Indoor Ambience" ID="{625DCDFE-8CCE-45D5-9F19-C26D015E25AC}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -92,7 +106,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="TV News" ID="{7C55A432-78B1-46A1-8960-248716CD719F}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+													<ObjectRef Name="TV On and Idle" ID="{EF72F7D7-1289-47AA-8469-23577C6DE0B4}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -121,7 +135,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="MusicStart" ID="{3B7DFB24-36EC-429A-8DA7-5084363BE4A3}"/>
+				<Event Name="MusicStart" ID="{3B7DFB24-36EC-429A-8DA7-5084363BE4A3}">
+					<ChildrenList>
+						<Action Name="" ID="{7F35A5DA-8C7D-4C3F-98C3-EE35F0EB5CF0}" ShortID="164334236">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Day to Day" ID="{41B21556-6C93-4B49-9C06-FA175C3197B4}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{33C19BEB-0EBB-4578-A495-B15CF166372E}" ShortID="1064506638">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gusts" ID="{10B39460-AFED-4FFF-B90B-8B46A4CCD87A}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{27A6BA7A-CC33-4FEF-9BC7-0BFFD480AE32}" ShortID="700526293">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birds" ID="{C4ACF3D3-051B-45DD-835B-C78BE5FBEF00}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="MusicEnd" ID="{4C2F207E-11F9-4351-8FE8-26BBB41455B3}">
 					<ChildrenList>
 						<Action Name="" ID="{AD048C9D-EDA7-45B9-9F1C-8D64D17503C1}" ShortID="434687668">
@@ -131,6 +169,31 @@
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TextSound" ID="{1D4F73E7-1030-4FB0-ACB5-68E0150E96AA}">
+					<ChildrenList>
+						<Action Name="" ID="{62BC30E2-59B8-457D-9154-C7126C49839B}" ShortID="514424204">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dialogue UI" ID="{B822D7B3-B293-49A4-A0E8-7A45D77EE06F}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D63F7F8F-FBAB-42AC-A255-530FB6404C18}" ShortID="1029047886">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Beeps, General, Terminal, Soft SND6596" ID="{2A3CA7CE-D371-4E8F-863B-B9A9B009620C}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+								</Reference>
+							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>

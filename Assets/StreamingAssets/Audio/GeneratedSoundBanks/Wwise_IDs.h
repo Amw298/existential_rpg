@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID SCENEEND = 2218040726U;
         static const AkUniqueID STOPNEWS = 832825332U;
+        static const AkUniqueID TEXTSOUND = 2992915453U;
     } // namespace EVENTS
 
     namespace STATES

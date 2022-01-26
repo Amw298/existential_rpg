@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3592867789">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2532215491">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3184279957">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1274910404">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -53,7 +53,7 @@
 					<IncludedMemoryFiles>
 						<File Id="309471613" Language="SFX">
 							<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
-							<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_0041C893.wem</Path>
+							<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_D838B8B1.wem</Path>
 						</File>
 						<File Id="662218837" Language="SFX">
 							<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
@@ -83,6 +83,27 @@
 				</Event>
 				<Event Id="4058101365" Name="GameStart" ObjectPath="\Events\Default Work Unit\GameStart" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="53618860" Language="SFX">
+							<ShortName>Alarms, Clock, Digital, Beeping 01 SND24821.wav</ShortName>
+							<Path>SFX\Alarms, Clock, Digital, Beeping 01 SND24821_10C4C929.wem</Path>
+						</File>
+						<File Id="467904998" Language="SFX">
+							<ShortName>Machines, Hvac, Extractor Unit, Block Of Flats, Air Condition, Hum SND30566.wav</ShortName>
+							<Path>SFX\Machines, Hvac, Extractor Unit, Block Of Flats, Air Condition, Hum SND30566_2640ADE6.wem</Path>
+						</File>
+						<File Id="841667161" Language="SFX">
+							<ShortName>Clocks, Tick, Grandfather Clock 02 SND12579.wav</ShortName>
+							<Path>SFX\Clocks, Tick, Grandfather Clock 02 SND12579_D83F2515.wem</Path>
+						</File>
+						<File Id="1007428521" Language="SFX">
+							<ShortName>Wind Whistle.wav</ShortName>
+							<Path>SFX\Wind Whistle_C77BD399.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2803552149" Name="MusicEnd" ObjectPath="\Events\Default Work Unit\MusicEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\MusicStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
 						<File Id="43142548" Language="SFX">
 							<ShortName>Birds, Songbird, Chirping, Close, Single 01 SND40684.wav</ShortName>
 							<Path>SFX\Birds, Songbird, Chirping, Close, Single 01 SND40684_10C4C929.wem</Path>
@@ -90,6 +111,10 @@
 						<File Id="233714797" Language="SFX">
 							<ShortName>Birds, Songbird, Chirping, Close, Single 02 SND40683.wav</ShortName>
 							<Path>SFX\Birds, Songbird, Chirping, Close, Single 02 SND40683_10C4C929.wem</Path>
+						</File>
+						<File Id="376697386" Language="SFX">
+							<ShortName>Day to Day Bass.wav</ShortName>
+							<Path>SFX\Day to Day Bass_D79FB2B7.wem</Path>
 						</File>
 						<File Id="452708341" Language="SFX">
 							<ShortName>Wind Whistle.wav</ShortName>
@@ -99,20 +124,38 @@
 							<ShortName>Birds, Songbird, Chirping, Close, Single 03 SND40682.wav</ShortName>
 							<Path>SFX\Birds, Songbird, Chirping, Close, Single 03 SND40682_10C4C929.wem</Path>
 						</File>
-						<File Id="1007428521" Language="SFX">
-							<ShortName>Wind Whistle.wav</ShortName>
-							<Path>SFX\Wind Whistle_AF39A190.wem</Path>
+						<File Id="515224881" Language="SFX">
+							<ShortName>Day to Day.wav</ShortName>
+							<Path>SFX\Day to Day_D79FB2B7.wem</Path>
+						</File>
+						<File Id="585634097" Language="SFX">
+							<ShortName>Day to Day Chime.wav</ShortName>
+							<Path>SFX\Day to Day Chime_D79FB2B7.wem</Path>
+						</File>
+						<File Id="660872421" Language="SFX">
+							<ShortName>Day to Day Melody.wav</ShortName>
+							<Path>SFX\Day to Day Melody_D79FB2B7.wem</Path>
+						</File>
+						<File Id="943570972" Language="SFX">
+							<ShortName>Day to Day Drums.wav</ShortName>
+							<Path>SFX\Day to Day Drums_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2803552149" Name="MusicEnd" ObjectPath="\Events\Default Work Unit\MusicEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\MusicStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2218040726" Name="SceneEnd" ObjectPath="\Events\Default Work Unit\SceneEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="832825332" Name="StopNews" ObjectPath="\Events\Default Work Unit\Interactables\TV\StopNews" DurationType="OneShot" DurationMin="0.253931" DurationMax="0.253931">
 					<IncludedMemoryFiles>
 						<File Id="766819087" Language="SFX">
 							<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
 							<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_62E426AB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2992915453" Name="TextSound" ObjectPath="\Events\Default Work Unit\TextSound" DurationType="OneShot" DurationMin="0.067928" DurationMax="0.067928">
+					<IncludedMemoryFiles>
+						<File Id="108327916" Language="SFX">
+							<ShortName>Beeps, General, Terminal, Soft SND6596.wav</ShortName>
+							<Path>SFX\Beeps, General, Terminal, Soft SND6596_AC4F3A1F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -126,6 +169,14 @@
 					<ShortName>Birds, Songbird, Chirping, Close, Single 01 SND40684.wav</ShortName>
 					<Path>SFX\Birds, Songbird, Chirping, Close, Single 01 SND40684_10C4C929.wem</Path>
 				</File>
+				<File Id="53618860" Language="SFX">
+					<ShortName>Alarms, Clock, Digital, Beeping 01 SND24821.wav</ShortName>
+					<Path>SFX\Alarms, Clock, Digital, Beeping 01 SND24821_10C4C929.wem</Path>
+				</File>
+				<File Id="108327916" Language="SFX">
+					<ShortName>Beeps, General, Terminal, Soft SND6596.wav</ShortName>
+					<Path>SFX\Beeps, General, Terminal, Soft SND6596_AC4F3A1F.wem</Path>
+				</File>
 				<File Id="183984303" Language="SFX">
 					<ShortName>Paper, Handle, Thin, Handling 02 SND4134.wav</ShortName>
 					<Path>SFX\Paper, Handle, Thin, Handling 02 SND4134_F52A528D.wem</Path>
@@ -136,7 +187,11 @@
 				</File>
 				<File Id="309471613" Language="SFX">
 					<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
-					<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_0041C893.wem</Path>
+					<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_D838B8B1.wem</Path>
+				</File>
+				<File Id="376697386" Language="SFX">
+					<ShortName>Day to Day Bass.wav</ShortName>
+					<Path>SFX\Day to Day Bass_D79FB2B7.wem</Path>
 				</File>
 				<File Id="452708341" Language="SFX">
 					<ShortName>Wind Whistle.wav</ShortName>
@@ -146,13 +201,29 @@
 					<ShortName>Doors, Wood, Open, Squeak, Close, Slam SND11376.wav</ShortName>
 					<Path>SFX\Doors, Wood, Open, Squeak, Close, Slam SND11376_E775CD02.wem</Path>
 				</File>
+				<File Id="467904998" Language="SFX">
+					<ShortName>Machines, Hvac, Extractor Unit, Block Of Flats, Air Condition, Hum SND30566.wav</ShortName>
+					<Path>SFX\Machines, Hvac, Extractor Unit, Block Of Flats, Air Condition, Hum SND30566_2640ADE6.wem</Path>
+				</File>
 				<File Id="495139559" Language="SFX">
 					<ShortName>Birds, Songbird, Chirping, Close, Single 03 SND40682.wav</ShortName>
 					<Path>SFX\Birds, Songbird, Chirping, Close, Single 03 SND40682_10C4C929.wem</Path>
 				</File>
+				<File Id="515224881" Language="SFX">
+					<ShortName>Day to Day.wav</ShortName>
+					<Path>SFX\Day to Day_D79FB2B7.wem</Path>
+				</File>
+				<File Id="585634097" Language="SFX">
+					<ShortName>Day to Day Chime.wav</ShortName>
+					<Path>SFX\Day to Day Chime_D79FB2B7.wem</Path>
+				</File>
 				<File Id="642230101" Language="SFX">
 					<ShortName>User Interface, Beep, Computer, Digital Beep, Short SND11436.wav</ShortName>
 					<Path>SFX\User Interface, Beep, Computer, Digital Beep, Short SND11436_10C4C929.wem</Path>
+				</File>
+				<File Id="660872421" Language="SFX">
+					<ShortName>Day to Day Melody.wav</ShortName>
+					<Path>SFX\Day to Day Melody_D79FB2B7.wem</Path>
 				</File>
 				<File Id="662218837" Language="SFX">
 					<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
@@ -170,9 +241,17 @@
 					<ShortName>Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648.wav</ShortName>
 					<Path>SFX\Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648_87897D4D.wem</Path>
 				</File>
+				<File Id="841667161" Language="SFX">
+					<ShortName>Clocks, Tick, Grandfather Clock 02 SND12579.wav</ShortName>
+					<Path>SFX\Clocks, Tick, Grandfather Clock 02 SND12579_D83F2515.wem</Path>
+				</File>
+				<File Id="943570972" Language="SFX">
+					<ShortName>Day to Day Drums.wav</ShortName>
+					<Path>SFX\Day to Day Drums_D79FB2B7.wem</Path>
+				</File>
 				<File Id="1007428521" Language="SFX">
 					<ShortName>Wind Whistle.wav</ShortName>
-					<Path>SFX\Wind Whistle_AF39A190.wem</Path>
+					<Path>SFX\Wind Whistle_C77BD399.wem</Path>
 				</File>
 				<File Id="1051067700" Language="SFX">
 					<ShortName>Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585.wav</ShortName>
