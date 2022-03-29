@@ -13,7 +13,7 @@ public class OutroManager : MonoBehaviour
     public Image backround;
     private GhostMover gm;
     private AudioManager audioManager;
-    public static int i = 0;
+    public static int i = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,9 +50,9 @@ public class OutroManager : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
         i++;
-        if (i > 2)
+        if (i > 3)
         {
-            i = 0;
+            i = 1;
         }
         SceneManager.LoadScene(i);
     }

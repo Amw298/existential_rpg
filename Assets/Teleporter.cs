@@ -16,9 +16,9 @@ public class Teleporter : MonoBehaviour
 
     private IEnumerator LoadTheArea()
     {
-        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 1);
+        backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 1);
         yield return new WaitForSeconds(1.0f);
-        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
+      backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
         FindObjectOfType<GhostMover>().Enable();
     }
 

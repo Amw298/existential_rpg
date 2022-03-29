@@ -193,7 +193,9 @@ public class GhostMover : MonoBehaviour
     }
     public void EnableOverworld()
     {
+        SetGhostDirection(new Vector2(0, 0));
         inputState = InputState.Overworld;
+
     }
     public void EnableInterogation()
     {
