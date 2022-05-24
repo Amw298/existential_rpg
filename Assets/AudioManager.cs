@@ -11,4 +11,8 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("MusicEnd", this.gameObject);
     }
+    public void StartFight()
+    {
+        AkSoundEngine.PostEvent("FightStart", this.gameObject);
+    }
 }

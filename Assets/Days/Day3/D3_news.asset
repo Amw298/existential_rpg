@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a657055a1f0e9448feb09b73fefe7d, type: 3}
+  m_Name: D3_news
+  m_EditorClassIdentifier: 
+  npcName: The News
+  sentences:
+  - 'BREAKING NEWS! '
+  - A plane crashed into an elementary school this morning. However, there were no
+    non-fatal injuries.
+  - ' All passengers are deceased. Due to a prior school shooting no one was left
+    alive in the building.'
+  - Personally, I blame you the viewer of this program for not standing up for what
+    you believe is right.
+  - The general public should be doing more to prevent horrible events like these
+    from occuring.
+  - .
+  - ..
+  - ...
+  - You stare blankly at the screen. Not a single thought of your own goes through
+    your head.
+  isLock: 1
+  uniqueID: news
+  AlternativeDialog: []

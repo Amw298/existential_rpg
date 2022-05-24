@@ -40,6 +40,7 @@ public class GhostMover : MonoBehaviour
         Laptop,
         Intro,
         Disable,
+        Fight,
     }
     private enum InteractableType
     {
@@ -103,6 +104,10 @@ public class GhostMover : MonoBehaviour
     public void SetY(float y)
     {
         transform.position = new Vector3(transform.position.x, y ,transform.position.z);
+    }
+    public void SetPosition(Vector3 pos)
+    {
+        transform.position = pos;
     }
 
     public void OnLoadFightScene()
@@ -174,6 +179,13 @@ public class GhostMover : MonoBehaviour
             {
                 inputState = InputState.Overworld;
             }
+        }else if(context.started && inputState == InputState.Fight)
+        {
+            GameObject fightScene = GameObject.FindGameObjectWithTag("FightScene");
+            for (int i = 0; i < fightScene.transform.childCount; i++)
+                fightScene.transform.GetChild(i).gameObject.SetActive(true);
+            dialogManager.CloseBox();
+            Disable();
         }
         if (context.canceled)
         {
@@ -236,6 +248,10 @@ public class GhostMover : MonoBehaviour
     public void Disable()
     {
         inputState = InputState.Disable;
+    }
+    public void Fight()
+    {
+        inputState = InputState.Fight;
     }
     public void Enable()
     {

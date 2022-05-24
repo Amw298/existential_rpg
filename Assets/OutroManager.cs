@@ -30,16 +30,21 @@ public class OutroManager : MonoBehaviour
     {
         if (collision.name == "PlayerCharacter")
         {
-            gm.Disable();
-            audioManager.SceneEnd();
+           
             StartCoroutine(Outro(7));
            
             //   FindObjectOfType<DialogManager>().SetInteracting(true);
         }
     }
-
-    private IEnumerator Outro(float time)
+    public void Quit()
     {
+        backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 1.0f);
+
+    }
+    public IEnumerator Outro(float time)
+    {
+        gm.Disable();
+        audioManager.SceneEnd();
         backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, backround.color.a);
         while (backround.color.a < 1.0f)
         {
@@ -50,7 +55,7 @@ public class OutroManager : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
         i++;
-        if (i > 3)
+        if (i > 6)
         {
             i = 1;
         }

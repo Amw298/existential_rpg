@@ -12,8 +12,11 @@ public class Door : MonoBehaviour
     public Image backround;
 
     public Dialog dialog;
-    int lockcount;
+    public int lockcount;
     private Area area;
+    public Vector3 teleportDestination;
+    public Vector3 baseDestination;
+
     // Start is called before the first frame update
     private enum Area
     {
@@ -37,7 +40,7 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(area);
     }
     public void Unlock()
     {
@@ -68,16 +71,17 @@ public class Door : MonoBehaviour
         outdoors.SetActive(true);
         area = Area.Outside;
         TransitionOn();
-        player.SetY(7.0f);
+        player.SetPosition(teleportDestination);
         player.Disable();
     }
     private void GoInside()
     {
+        Debug.Log("going");
         indoors.SetActive(true);
         outdoors.SetActive(false);
         area = Area.Inside;
         TransitionOn();
-        player.SetY(5.0f);
+        player.SetPosition(baseDestination);
         player.Disable();
 
     }

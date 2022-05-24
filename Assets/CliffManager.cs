@@ -34,13 +34,17 @@ public class CliffManager : MonoBehaviour
             else
             {
                 GetComponent<Collider2D>().isTrigger = true;
+                FindObjectOfType<OutroManager>().Quit();
+
+                Application.Quit();
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.name == "PlayerCharacter")
         {
+            FindObjectOfType<OutroManager>().Quit();
             Destroy(collision.gameObject);
             Application.Quit();
         }
