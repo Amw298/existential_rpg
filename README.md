@@ -3,3 +3,4 @@
  Code: Adam Wachowicz
  Audio Programming and Sound Design: Anthony Del Grosso
  
+![plot](./plot.JPG)
