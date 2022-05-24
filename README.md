@@ -1,9 +1,9 @@
 # existential_rpg
 ## A small RPG made by two pals:
 ### Code: 
-Adam Wachowicz
+**Adam Wachowicz** : @Amw298
 ### Audio Programming and Sound Design: 
-Anthony Del Grosso
+**Anthony Del Grosso** : @antdelgrosso
 
 # Description:
 Existential RPG is an adventure through *failure*, loss, and **boredom**. There's absolutely nothing fun about it. It's still in developement and you can expect to see an actual build and release by the end of August 2022. 
