@@ -43,7 +43,6 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
     - {fileID: 2800000, guid: afd2adabd2e38334780015e21dc7536e, type: 3}
     - {fileID: 2800000, guid: ed47ad2330b247e4993a2ac7009ee820, type: 3}
     - {fileID: 2800000, guid: 51c6ee60d1dcd98478d8cc9a54390ada, type: 3}
@@ -57,14 +56,6 @@ SpriteAtlas:
   - {fileID: 1783640835874756645, guid: 51c6ee60d1dcd98478d8cc9a54390ada, type: 3}
   - {fileID: 4369560171034777531, guid: 51c6ee60d1dcd98478d8cc9a54390ada, type: 3}
   - {fileID: 2473540437737637836, guid: ed47ad2330b247e4993a2ac7009ee820, type: 3}
-  - {fileID: 503196278654039644, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
-  - {fileID: -630964425889175585, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
-  - {fileID: -2977416915350031775, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
-  - {fileID: 1352633793875382684, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
-  - {fileID: 3704747987489022064, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
-  - {fileID: 2391479274727093528, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
-  - {fileID: -1851312753112981895, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
-  - {fileID: 6389202901930737798, guid: 456a87e36026cf548b1fba0359ba2e24, type: 3}
   - {fileID: -3029061291949361114, guid: afd2adabd2e38334780015e21dc7536e, type: 3}
   - {fileID: -192927122023558670, guid: afd2adabd2e38334780015e21dc7536e, type: 3}
   - {fileID: 2645525268990843163, guid: afd2adabd2e38334780015e21dc7536e, type: 3}
@@ -80,14 +71,6 @@ SpriteAtlas:
   - Roads_3
   - Roads_2
   - Rood_0
-  - Mainchar_1
-  - Mainchar_0
-  - Mainchar_3
-  - Mainchar_2
-  - Mainchar_5
-  - Mainchar_4
-  - Mainchar_7
-  - Mainchar_6
   - MapGrass_2
   - MapGrass_3
   - MapGrass_0
