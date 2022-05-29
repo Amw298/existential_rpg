@@ -35,5 +35,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day8_dream.unity
     guid: f116b48aab11ff54fafb41feeb9abcbe
+  - enabled: 1
+    path: Assets/Scenes/Day9.unity
+    guid: 24f9a4afede00554185c67970f6dc871
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ffa334b3f89208a499b2af09b0f77e73, type: 2}
