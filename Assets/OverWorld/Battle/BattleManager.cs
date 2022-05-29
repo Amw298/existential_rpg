@@ -103,6 +103,8 @@ public class BattleManager : MonoBehaviour
     }
     public void EndBattle()
     {
+        AkSoundEngine.PostEvent("EndBattle", this.gameObject);
+
         this.gameObject.SetActive(false);
         FindObjectOfType<GhostMover>().Enable();
     }

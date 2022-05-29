@@ -31,7 +31,8 @@ public class DialogManager : MonoBehaviour
     public Door door;
     public CoffeeMachine cm;
     public float textSpeed = 0.2f;
-    
+    public Sprite lappysprite;
+    public GameObject lappy;
     // Start is called before the first frame update
     void Start()
     {
@@ -201,7 +202,15 @@ public class DialogManager : MonoBehaviour
                
                 gm.Fight();
             }
-            
+            else if (letter.Equals('<'))
+            {
+                AkSoundEngine.PostEvent("FanNoise", this.gameObject);
+
+            }
+            else if (letter.Equals('#'))
+            {
+                lappy.GetComponent<SpriteRenderer>().sprite = lappysprite;
+            }
             else
             {
                 AkSoundEngine.PostEvent("TextSound", this.gameObject);
