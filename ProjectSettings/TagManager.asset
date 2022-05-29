@@ -9,6 +9,7 @@ TagManager:
   - Lock
   - indoors
   - outdoors
+  - FightScene
   layers:
   - Default
   - TransparentFX

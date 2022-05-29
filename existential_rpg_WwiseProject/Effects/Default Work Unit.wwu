@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DF4441A3-598E-4B7D-A012-F2F409E65D4D}" SchemaVersion="103">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{DF4441A3-598E-4B7D-A012-F2F409E65D4D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_SoundSeed_Impact" ID="{BBC1D966-A58B-4A6A-ADBB-8D8B522D7955}" PluginName="SoundSeed Impact" CompanyID="0" PluginID="116" PluginType="3">					<PluginData>
+	<ModeList GlobalGain="0"/>
+</PluginData>
+				</Effect>
+				<Effect Name="New_Mastering_Suite" ID="{0328EB56-0C8D-4381-BA3B-FC01CBEE213F}" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">					<PluginData/>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

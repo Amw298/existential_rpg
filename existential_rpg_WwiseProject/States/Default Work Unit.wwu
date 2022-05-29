@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{80DE6189-A7EB-4AD6-B202-E7BC86ADE8DB}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{80DE6189-A7EB-4AD6-B202-E7BC86ADE8DB}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Area" ID="{73FCE5C5-8100-47E6-9FF1-31E7FB778668}">
+					<ChildrenList>
+						<State Name="None" ID="{E6BE3A92-ED82-4D07-A2FD-3E4C85D67A2F}"/>
+						<State Name="Inside" ID="{5F2A2578-8817-4EC0-8D34-EE27C69378AA}"/>
+						<State Name="Outside" ID="{067079F0-0550-44B6-81C3-4FF553A17348}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Outside" ID="{067079F0-0550-44B6-81C3-4FF553A17348}"/>
+							<EndState Name="Inside" ID="{5F2A2578-8817-4EC0-8D34-EE27C69378AA}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

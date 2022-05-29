@@ -16,7 +16,9 @@ public class InteractableNPC : MonoBehaviour
            
         {
             FindObjectOfType<GhostMover>().SetDialog(dialog);
-         //   FindObjectOfType<DialogManager>().SetInteracting(true);
+            FindObjectOfType<GhostMover>().SetInteractable(this.gameObject);
+
+            //   FindObjectOfType<DialogManager>().SetInteracting(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -25,7 +27,8 @@ public class InteractableNPC : MonoBehaviour
         {
             
             FindObjectOfType<GhostMover>().SetDialog(defaultDialog);
-           //FindObjectOfType<DialogManager>().SetInteracting(false);
+            FindObjectOfType<GhostMover>().SetInteractable(collision.gameObject);
+            //FindObjectOfType<DialogManager>().SetInteracting(false);
         }
     }
 }

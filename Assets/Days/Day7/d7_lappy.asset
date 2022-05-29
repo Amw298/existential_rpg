@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a657055a1f0e9448feb09b73fefe7d, type: 3}
+  m_Name: d7_lappy
+  m_EditorClassIdentifier: 
+  npcName: Lappy
+  sentences:
+  - You see an email from your boss... Anxiety overwhelms you!
+  - Do you want to open it?
+  isLock: 1
+  uniqueID: lappy
+  AlternativeDialog:
+  - {fileID: 11400000, guid: 27f79593e44d1204c91bf50a0e0861e9, type: 2}
+  - {fileID: 11400000, guid: 27f79593e44d1204c91bf50a0e0861e9, type: 2}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a7532371fa0ad4cadb367e4584af07, type: 3}
+  m_Name: New Fight Dialog
+  m_EditorClassIdentifier: 
+  enemyName: Television
+  sentences:
+  - You immediately feel worse.
+  - 'You feel better. '
+  - You land another stomp!
+  - Stomp!
+  - 'The stomp lands. '
+  - You start stomping the TV!
+  - SmaaaAAASSSSHHHH!!!!!!!!
+  - Another good shot!
+  - Kaboom!
+  - Perfect Hit!
+  - You successfully kick the TV!
+  - You attack the TV!

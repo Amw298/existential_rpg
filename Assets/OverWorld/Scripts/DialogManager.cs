@@ -42,7 +42,7 @@ public class DialogManager : MonoBehaviour
         canvas = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<Canvas>();
         sentences = new Queue<string>();
         recentlyUsedDialogs = new LinkedList<Dialog>();
-
+        nameText.color = new Color(0, 0, 0, 0);
 
     }
 
@@ -186,11 +186,27 @@ public class DialogManager : MonoBehaviour
    
     IEnumerator TypeSentence(string sentence)
     {
+        
         isTyping = true;
         dialogText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
-            dialogText.text += letter;
+          
+            if (letter.Equals('*'))
+            {
+                StartCoroutine(FindObjectOfType<OutroManager>().Outro(7));
+
+            }else if (letter.Equals('>'))
+            {
+               
+                gm.Fight();
+            }
+            
+            else
+            {
+                AkSoundEngine.PostEvent("TextSound", this.gameObject);
+                dialogText.text += letter;
+            }
             yield return new WaitForSeconds(textSpeed);
         }
         isTyping = false;
@@ -228,6 +244,10 @@ public class DialogManager : MonoBehaviour
             meshInfo.mesh.vertices = meshInfo.vertices;
             dialogText.UpdateGeometry(meshInfo.mesh, i);
         }
+    }
+    public void CloseBox()
+    {
+        canvas.enabled = false;
     }
     private void EndDialog()
     {

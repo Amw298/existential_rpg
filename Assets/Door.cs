@@ -12,8 +12,11 @@ public class Door : MonoBehaviour
     public Image backround;
 
     public Dialog dialog;
-    int lockcount;
+    public int lockcount;
     private Area area;
+    public Vector3 teleportDestination;
+    public Vector3 baseDestination;
+
     // Start is called before the first frame update
     private enum Area
     {
@@ -29,14 +32,15 @@ public class Door : MonoBehaviour
         indoors = GameObject.FindGameObjectWithTag("indoors");
         area = Area.Inside;
         player = FindObjectOfType<GhostMover>();
-        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
+        AkSoundEngine.SetState("Area", "Inside");
 
+        backround.color = backround.color = new Color(backround.color.r, backround.color.g, backround.color.b, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(area);
     }
     public void Unlock()
     {
@@ -57,6 +61,7 @@ public class Door : MonoBehaviour
             {
                 GetComponent<Collider2D>().isTrigger = true;
                 GoOutside();
+                AkSoundEngine.PostEvent("DoorOpen", this.gameObject);
             }
         }
     }
@@ -66,16 +71,17 @@ public class Door : MonoBehaviour
         outdoors.SetActive(true);
         area = Area.Outside;
         TransitionOn();
-        player.SetY(7.0f);
+        player.SetPosition(teleportDestination);
         player.Disable();
     }
     private void GoInside()
     {
+        Debug.Log("going");
         indoors.SetActive(true);
         outdoors.SetActive(false);
         area = Area.Inside;
         TransitionOn();
-        player.SetY(5.0f);
+        player.SetPosition(baseDestination);
         player.Disable();
 
     }
@@ -104,7 +110,9 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "PlayerCharacter")
+        AkSoundEngine.PostEvent("DoorOpen", this.gameObject);
+
+        if (collision.name == "PlayerCharacter")
         {
             if(area == Area.Inside)
             {
@@ -127,10 +135,13 @@ public class Door : MonoBehaviour
         yield return new WaitForSeconds(1);
         TransitionOff();
         yield return new WaitForSeconds(0.2f);
-        
+        if (area == Area.Outside) {
+            AkSoundEngine.SetState("Area", "Outside");
+        }
+        else
+        {
+            AkSoundEngine.SetState("Area", "Inside");
+        }
         player.Enable();
-
     }
-
-
 }

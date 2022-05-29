@@ -15,7 +15,6 @@ public class CoffeeMachine : InteractableNPC
        if(bc.IsTouching(player.GetComponent<Collider2D>()))
         {
             gm.SetDialog(dialogs[numberOfTimesInteracted]);
-
         }
     }
     // Start is called before the first frame update
@@ -27,7 +26,7 @@ public class CoffeeMachine : InteractableNPC
             GhostMover gm = FindObjectOfType<GhostMover>();
             gm.SetDialog(dialogs[numberOfTimesInteracted]);
             gm.EnableCoffee();
-
+            gm.SetInteractable(this.gameObject);
 
             //   FindObjectOfType<DialogManager>().SetInteracting(true);
         }
@@ -54,6 +53,8 @@ public class CoffeeMachine : InteractableNPC
             GhostMover gm = FindObjectOfType<GhostMover>();
             gm.SetDialog(defaultDialog);
             gm.resetMisc();
+            gm.SetInteractable(collision.gameObject);
+
             //FindObjectOfType<DialogManager>().SetInteracting(false);
         }
     }
