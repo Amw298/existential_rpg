@@ -55,7 +55,7 @@ public class OutroManager : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
         i++;
-        if (i > 6)
+        if (i > 9)
         {
             i = 1;
         }
