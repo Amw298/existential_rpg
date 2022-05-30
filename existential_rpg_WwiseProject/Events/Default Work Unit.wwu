@@ -119,6 +119,70 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Folder Name="TV Fight" ID="{22514C25-17FF-4ACD-A915-87304875600A}" ShortID="941893362">
+									<ChildrenList>
+										<Event Name="Attack" ID="{185264DE-FAF0-496F-AF50-747E297C87E0}">
+											<ChildrenList>
+												<Action Name="" ID="{79F4E57C-4F4B-477D-A126-288E97B1E0D5}" ShortID="42645020">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Attacks" ID="{0CAA6740-C260-4A47-B204-D6907B770DB1}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="StartBattle" ID="{83008EA9-9593-4ABF-99F9-478F89D066BD}">
+											<ChildrenList>
+												<Action Name="" ID="{4B0741F2-FFB6-4D31-8797-42A89A88E43A}" ShortID="747641251">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="8"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList/>
+												</Action>
+												<Action Name="" ID="{5DB82F8F-3A9C-4788-945F-4DB802E40B03}" ShortID="4096227">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Boss Fight" ID="{19912430-2F66-4D33-AA41-E1C2778FD7FC}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="KillingBlow" ID="{8F6AF571-35B3-4FB1-9175-77C105D8241E}">
+											<ChildrenList>
+												<Action Name="" ID="{AA8C0F4C-48B1-4E47-ADE5-A77DDB7A378A}" ShortID="798906627">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Loop" ID="{447A4E21-A1FF-4F9A-BC0E-3C97D944A9BF}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{6DD7144F-9D1B-4DA0-BAD1-357638B61D76}" ShortID="939943633">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="End" ID="{893C1F24-89C5-4045-821C-CD79B94A3742}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{100D04A1-8855-4344-A54C-CA6421EA9A8E}" ShortID="646843226">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="10"/>
+														<Property Name="Delay" Type="Real64" Value="5"/>
+														<Property Name="FadeTime" Type="Real64" Value="3"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList/>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Event Name="DialogStartMess" ID="{557C48A2-E65C-4857-86CD-95C92C624624}">

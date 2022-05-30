@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 27155a69e6abaa4a8bc7254bf7a0ee25
     GuidInternal: 
-    m_lastTime: -8585596518355142779
+    m_lastTime: -8585477557709219903
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 842e1212bed027468eabe21a3e541fb5
     GuidInternal: 
-    m_lastTime: -8585596518356122919
+    m_lastTime: -8585477557712434463
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 08be4e1660b02b40ab37db553f32cdf2
     GuidInternal: 
-    m_lastTime: -8585584363830095009
+    m_lastTime: -8585477520175212175
     List:
     - name: Main
       guid: bdb23003fb6a5440af0c2b603f83aee3
@@ -94,8 +94,34 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f2b8be7aae3ff479d5064667b564177
     GuidInternal: 
-    m_lastTime: -8585583664804388242
+    m_lastTime: -8585477522200636118
     List:
+    - name: Attack
+      guid: de645218f0fa6f49af50747e297c87e0
+      id: 180661997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: TV
+        ObjectType: 4
+        guid: 5f5ae1009a507549ae5f99f4d47da7fe
+      - ElementName: TV Fight
+        ObjectType: 4
+        guid: 254c5122ff17cd4aa91587304875600a
+      - ElementName: Attack
+        ObjectType: 3
+        guid: de645218f0fa6f49af50747e297c87e0
+      Path: Events\Default Work Unit\Interactables\TV\TV Fight\Attack
+      maxAttenuation: 0
+      maxDuration: 1.21701
+      minDuration: 0.824593
     - name: DialogStartBed
       guid: 69b2a110a2d3ca4d956899e7666f20f4
       id: 165295640
@@ -250,6 +276,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: KillingBlow
+      guid: 71f56a8fb335b14f917577c105d8241e
+      id: 1916415631
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: TV
+        ObjectType: 4
+        guid: 5f5ae1009a507549ae5f99f4d47da7fe
+      - ElementName: TV Fight
+        ObjectType: 4
+        guid: 254c5122ff17cd4aa91587304875600a
+      - ElementName: KillingBlow
+        ObjectType: 3
+        guid: 71f56a8fb335b14f917577c105d8241e
+      Path: Events\Default Work Unit\Interactables\TV\TV Fight\KillingBlow
+      maxAttenuation: 0
+      maxDuration: 1.333333
+      minDuration: 1.333333
     - name: MusicEnd
       guid: 7e202f4cf91151438fe826bbb41455b3
       id: 2803552149
@@ -321,6 +373,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: StartBattle
+      guid: a98e00839395bf4a99f9478f89d066bd
+      id: 10099645
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: TV
+        ObjectType: 4
+        guid: 5f5ae1009a507549ae5f99f4d47da7fe
+      - ElementName: TV Fight
+        ObjectType: 4
+        guid: 254c5122ff17cd4aa91587304875600a
+      - ElementName: StartBattle
+        ObjectType: 3
+        guid: a98e00839395bf4a99f9478f89d066bd
+      Path: Events\Default Work Unit\Interactables\TV\TV Fight\StartBattle
+      maxAttenuation: 0
+      maxDuration: 66.66667
+      minDuration: 66.66667
     - name: StopNews
       guid: c5bc2361486ab64c8b27d893f8d85de0
       id: 832825332
@@ -381,6 +459,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: TV Fight
+      guid: 254c5122ff17cd4aa91587304875600a
+      id: 3967040581
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: TV
+        ObjectType: 4
+        guid: 5f5ae1009a507549ae5f99f4d47da7fe
+      - ElementName: TV Fight
+        ObjectType: 4
+        guid: 254c5122ff17cd4aa91587304875600a
+      Path: Events\Default Work Unit\Interactables\TV\TV Fight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -393,7 +494,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7d5fe2c7446ac9409c9a74d6eeebf659
     GuidInternal: 
-    m_lastTime: -8585596518356973777
+    m_lastTime: -8585477557716867875
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -407,7 +508,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8961de80eba7d64ab202e7bc86ade8db
     GuidInternal: 
-    m_lastTime: -8585584363830024146
+    m_lastTime: -8585477557709229901
     List:
     - name: Area
       guid: c5e5fc730081e6479ff131e7fb778668
@@ -487,7 +588,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: d2e7680339a7d14b802472451ce06e01
     GuidInternal: 
-    m_lastTime: -8585596518355662609
+    m_lastTime: -8585477557709229901
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -501,7 +602,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ed0ab5a56129304f98a3a4a40ccce93b
     GuidInternal: 
-    m_lastTime: -8585596518359092803
+    m_lastTime: -8585477557709219903
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

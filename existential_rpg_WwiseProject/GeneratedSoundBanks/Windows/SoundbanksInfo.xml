@@ -16,11 +16,59 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="423375926">
+		<SoundBank Id="3161908922" Language="SFX" Hash="732076007">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="180661997" Name="Attack" ObjectPath="\Events\Default Work Unit\Interactables\TV\TV Fight\Attack" DurationType="OneShot" DurationMin="0.824593" DurationMax="1.217010">
+					<IncludedMemoryFiles>
+						<File Id="176415618" Language="SFX">
+							<ShortName>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</ShortName>
+							<Path>SFX\Fight, Cloth, Punch, Block, Swoosh SND4355 1_41B7B61E.wem</Path>
+						</File>
+						<File Id="342996144" Language="SFX">
+							<ShortName>DESTRUCTION Glass Break 2.wav</ShortName>
+							<Path>SFX\DESTRUCTION Glass Break 2_336209B7.wem</Path>
+						</File>
+						<File Id="402215997" Language="SFX">
+							<ShortName>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</ShortName>
+							<Path>SFX\Fight, Cloth, Punch, Block, Swoosh SND4355 1_FDB3B717.wem</Path>
+						</File>
+						<File Id="555129500" Language="SFX">
+							<ShortName>SPORTS Soccer Kick 2.wav</ShortName>
+							<Path>SFX\SPORTS Soccer Kick 2_CF0531C3.wem</Path>
+						</File>
+						<File Id="629655936" Language="SFX">
+							<ShortName>DESTRUCTION Glass Break 3.wav</ShortName>
+							<Path>SFX\DESTRUCTION Glass Break 3_18E2D6C9.wem</Path>
+						</File>
+						<File Id="699940968" Language="SFX">
+							<ShortName>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</ShortName>
+							<Path>SFX\Fight, Cloth, Punch, Block, Swoosh SND4355 1_DE623611.wem</Path>
+						</File>
+						<File Id="781266119" Language="SFX">
+							<ShortName>SPORTS Soccer Kick 2.wav</ShortName>
+							<Path>SFX\SPORTS Soccer Kick 2_B89B99F6.wem</Path>
+						</File>
+						<File Id="796831017" Language="SFX">
+							<ShortName>DESTRUCTION Glass Break 4.wav</ShortName>
+							<Path>SFX\DESTRUCTION Glass Break 4_D036286C.wem</Path>
+						</File>
+						<File Id="981540716" Language="SFX">
+							<ShortName>DESTRUCTION Glass Break 5.wav</ShortName>
+							<Path>SFX\DESTRUCTION Glass Break 5_99D6109F.wem</Path>
+						</File>
+						<File Id="994015190" Language="SFX">
+							<ShortName>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</ShortName>
+							<Path>SFX\Fight, Cloth, Punch, Block, Swoosh SND4355 1_FBF0C010.wem</Path>
+						</File>
+						<File Id="1003846998" Language="SFX">
+							<ShortName>SPORTS Soccer Kick 2.wav</ShortName>
+							<Path>SFX\SPORTS Soccer Kick 2_D80EBF4B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="165295640" Name="DialogStartBed" ObjectPath="\Events\Default Work Unit\Interactables\DialogStartBed" DurationType="OneShot" DurationMin="2.147957" DurationMax="2.147957">
 					<IncludedMemoryFiles>
 						<File Id="748097432" Language="SFX">
@@ -45,7 +93,7 @@
 					<IncludedMemoryFiles>
 						<File Id="677176813" Language="SFX">
 							<ShortName>Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1.wav</ShortName>
-							<Path>SFX\Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1_4B772CA5.wem</Path>
+							<Path>SFX\Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1_407B3461.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -101,6 +149,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1916415631" Name="KillingBlow" ObjectPath="\Events\Default Work Unit\Interactables\TV\TV Fight\KillingBlow" DurationType="OneShot" DurationMin="1.333333" DurationMax="1.333333">
+					<IncludedMemoryFiles>
+						<File Id="476913309" Language="SFX">
+							<ShortName>Boss Fight.wav</ShortName>
+							<Path>SFX\Boss Fight_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2803552149" Name="MusicEnd" ObjectPath="\Events\Default Work Unit\MusicEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\MusicStart" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -146,11 +202,19 @@
 					<IncludedMemoryFiles>
 						<File Id="1051067700" Language="SFX">
 							<ShortName>Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585.wav</ShortName>
-							<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_7CA8EAF9.wem</Path>
+							<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_A8CE7167.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2218040726" Name="SceneEnd" ObjectPath="\Events\Default Work Unit\SceneEnd" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="10099645" Name="StartBattle" ObjectPath="\Events\Default Work Unit\Interactables\TV\TV Fight\StartBattle" DurationType="OneShot" DurationMin="66.666672" DurationMax="66.666672">
+					<IncludedMemoryFiles>
+						<File Id="476913309" Language="SFX">
+							<ShortName>Boss Fight.wav</ShortName>
+							<Path>SFX\Boss Fight_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="832825332" Name="StopNews" ObjectPath="\Events\Default Work Unit\Interactables\TV\StopNews" DurationType="OneShot" DurationMin="0.253931" DurationMax="0.253931">
 					<IncludedMemoryFiles>
 						<File Id="766819087" Language="SFX">
@@ -185,6 +249,10 @@
 					<ShortName>Beeps, General, Terminal, Soft SND6596.wav</ShortName>
 					<Path>SFX\Beeps, General, Terminal, Soft SND6596_AC4F3A1F.wem</Path>
 				</File>
+				<File Id="176415618" Language="SFX">
+					<ShortName>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</ShortName>
+					<Path>SFX\Fight, Cloth, Punch, Block, Swoosh SND4355 1_41B7B61E.wem</Path>
+				</File>
 				<File Id="183984303" Language="SFX">
 					<ShortName>Paper, Handle, Thin, Handling 02 SND4134.wav</ShortName>
 					<Path>SFX\Paper, Handle, Thin, Handling 02 SND4134_F52A528D.wem</Path>
@@ -197,9 +265,17 @@
 					<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
 					<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_D838B8B1.wem</Path>
 				</File>
+				<File Id="342996144" Language="SFX">
+					<ShortName>DESTRUCTION Glass Break 2.wav</ShortName>
+					<Path>SFX\DESTRUCTION Glass Break 2_336209B7.wem</Path>
+				</File>
 				<File Id="376697386" Language="SFX">
 					<ShortName>Day to Day Bass.wav</ShortName>
 					<Path>SFX\Day to Day Bass_D79FB2B7.wem</Path>
+				</File>
+				<File Id="402215997" Language="SFX">
+					<ShortName>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</ShortName>
+					<Path>SFX\Fight, Cloth, Punch, Block, Swoosh SND4355 1_FDB3B717.wem</Path>
 				</File>
 				<File Id="452708341" Language="SFX">
 					<ShortName>Wind Whistle.wav</ShortName>
@@ -213,6 +289,10 @@
 					<ShortName>Machines, Hvac, Extractor Unit, Block Of Flats, Air Condition, Hum SND30566.wav</ShortName>
 					<Path>SFX\Machines, Hvac, Extractor Unit, Block Of Flats, Air Condition, Hum SND30566_2640ADE6.wem</Path>
 				</File>
+				<File Id="476913309" Language="SFX">
+					<ShortName>Boss Fight.wav</ShortName>
+					<Path>SFX\Boss Fight_D79FB2B7.wem</Path>
+				</File>
 				<File Id="495139559" Language="SFX">
 					<ShortName>Birds, Songbird, Chirping, Close, Single 03 SND40682.wav</ShortName>
 					<Path>SFX\Birds, Songbird, Chirping, Close, Single 03 SND40682_10C4C929.wem</Path>
@@ -221,9 +301,17 @@
 					<ShortName>Day to Day.wav</ShortName>
 					<Path>SFX\Day to Day_D79FB2B7.wem</Path>
 				</File>
+				<File Id="555129500" Language="SFX">
+					<ShortName>SPORTS Soccer Kick 2.wav</ShortName>
+					<Path>SFX\SPORTS Soccer Kick 2_CF0531C3.wem</Path>
+				</File>
 				<File Id="585634097" Language="SFX">
 					<ShortName>Day to Day Chime.wav</ShortName>
 					<Path>SFX\Day to Day Chime_D79FB2B7.wem</Path>
+				</File>
+				<File Id="629655936" Language="SFX">
+					<ShortName>DESTRUCTION Glass Break 3.wav</ShortName>
+					<Path>SFX\DESTRUCTION Glass Break 3_18E2D6C9.wem</Path>
 				</File>
 				<File Id="642230101" Language="SFX">
 					<ShortName>User Interface, Beep, Computer, Digital Beep, Short SND11436.wav</ShortName>
@@ -239,7 +327,11 @@
 				</File>
 				<File Id="677176813" Language="SFX">
 					<ShortName>Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1.wav</ShortName>
-					<Path>SFX\Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1_4B772CA5.wem</Path>
+					<Path>SFX\Designed, Braam, Organic, Slight Pitch Bend Up, Trombones SND56468 1_407B3461.wem</Path>
+				</File>
+				<File Id="699940968" Language="SFX">
+					<ShortName>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</ShortName>
+					<Path>SFX\Fight, Cloth, Punch, Block, Swoosh SND4355 1_DE623611.wem</Path>
 				</File>
 				<File Id="748097432" Language="SFX">
 					<ShortName>Cloth, Movement, Person In Bed, Movements Under Covers 2 SND16588.wav</ShortName>
@@ -249,9 +341,17 @@
 					<ShortName>Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146.wav</ShortName>
 					<Path>SFX\Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146_62E426AB.wem</Path>
 				</File>
+				<File Id="781266119" Language="SFX">
+					<ShortName>SPORTS Soccer Kick 2.wav</ShortName>
+					<Path>SFX\SPORTS Soccer Kick 2_B89B99F6.wem</Path>
+				</File>
 				<File Id="788425589" Language="SFX">
 					<ShortName>Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648.wav</ShortName>
 					<Path>SFX\Objects, Furniture, Bed, Person Sits On Wooden Frame, Creak 01 SND24648_87897D4D.wem</Path>
+				</File>
+				<File Id="796831017" Language="SFX">
+					<ShortName>DESTRUCTION Glass Break 4.wav</ShortName>
+					<Path>SFX\DESTRUCTION Glass Break 4_D036286C.wem</Path>
 				</File>
 				<File Id="841667161" Language="SFX">
 					<ShortName>Clocks, Tick, Grandfather Clock 02 SND12579.wav</ShortName>
@@ -261,13 +361,25 @@
 					<ShortName>Day to Day Drums.wav</ShortName>
 					<Path>SFX\Day to Day Drums_D79FB2B7.wem</Path>
 				</File>
+				<File Id="981540716" Language="SFX">
+					<ShortName>DESTRUCTION Glass Break 5.wav</ShortName>
+					<Path>SFX\DESTRUCTION Glass Break 5_99D6109F.wem</Path>
+				</File>
+				<File Id="994015190" Language="SFX">
+					<ShortName>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</ShortName>
+					<Path>SFX\Fight, Cloth, Punch, Block, Swoosh SND4355 1_FBF0C010.wem</Path>
+				</File>
+				<File Id="1003846998" Language="SFX">
+					<ShortName>SPORTS Soccer Kick 2.wav</ShortName>
+					<Path>SFX\SPORTS Soccer Kick 2_D80EBF4B.wem</Path>
+				</File>
 				<File Id="1007428521" Language="SFX">
 					<ShortName>Wind Whistle.wav</ShortName>
 					<Path>SFX\Wind Whistle_C77BD399.wem</Path>
 				</File>
 				<File Id="1051067700" Language="SFX">
 					<ShortName>Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585.wav</ShortName>
-					<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_7CA8EAF9.wem</Path>
+					<Path>SFX\Food &amp; Drink, Glassware, Pouring Coffee, Hot Liquid, Mug SND12585_A8CE7167.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
