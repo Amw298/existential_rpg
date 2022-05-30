@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 08be4e1660b02b40ab37db553f32cdf2
     GuidInternal: 
-    m_lastTime: -8585477520175212175
+    m_lastTime: -8585476736733679415
     List:
     - name: Main
       guid: bdb23003fb6a5440af0c2b603f83aee3
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6f2b8be7aae3ff479d5064667b564177
     GuidInternal: 
-    m_lastTime: -8585477522200636118
+    m_lastTime: -8585476677559577401
     List:
     - name: Attack
       guid: de645218f0fa6f49af50747e297c87e0
@@ -242,6 +242,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.63669
       minDuration: 1.63669
+    - name: EndBattle
+      guid: 337e21c131b4104fafb5f20b2d06b4ae
+      id: 4064399842
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6f2b8be7aae3ff479d5064667b564177
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: ce3b19e287d77346a4dba93295dcca20
+      - ElementName: TV
+        ObjectType: 4
+        guid: 5f5ae1009a507549ae5f99f4d47da7fe
+      - ElementName: TV Fight
+        ObjectType: 4
+        guid: 254c5122ff17cd4aa91587304875600a
+      - ElementName: EndBattle
+        ObjectType: 3
+        guid: 337e21c131b4104fafb5f20b2d06b4ae
+      Path: Events\Default Work Unit\Interactables\TV\TV Fight\EndBattle
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: GameStart
       guid: 86fc56f9fb1b8043a0e2929796a5d41a
       id: 4058101365
@@ -300,8 +326,8 @@ MonoBehaviour:
         guid: 71f56a8fb335b14f917577c105d8241e
       Path: Events\Default Work Unit\Interactables\TV\TV Fight\KillingBlow
       maxAttenuation: 0
-      maxDuration: 1.333333
-      minDuration: 1.333333
+      maxDuration: 0
+      minDuration: 0
     - name: MusicEnd
       guid: 7e202f4cf91151438fe826bbb41455b3
       id: 2803552149
@@ -397,8 +423,8 @@ MonoBehaviour:
         guid: a98e00839395bf4a99f9478f89d066bd
       Path: Events\Default Work Unit\Interactables\TV\TV Fight\StartBattle
       maxAttenuation: 0
-      maxDuration: 66.66667
-      minDuration: 66.66667
+      maxDuration: -1
+      minDuration: -1
     - name: StopNews
       guid: c5bc2361486ab64c8b27d893f8d85de0
       id: 832825332
@@ -588,8 +614,85 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: d2e7680339a7d14b802472451ce06e01
     GuidInternal: 
-    m_lastTime: -8585477557709229901
-    List: []
+    m_lastTime: -8585476717316847181
+    List:
+    - name: FightMusic
+      guid: 9904f5a5c1ec9c4ba5cf79c0123ce838
+      id: 3890691062
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d2e7680339a7d14b802472451ce06e01
+      - ElementName: Music
+        ObjectType: 4
+        guid: f18753edb8e6b342850434eca3667032
+      - ElementName: FightMusic
+        ObjectType: 11
+        guid: 9904f5a5c1ec9c4ba5cf79c0123ce838
+      Path: Switches\Default Work Unit\Music\FightMusic
+      values:
+      - name: End
+        guid: aaae704b2cd6b24fa2231c7a77cfae98
+        id: 529726532
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d2e7680339a7d14b802472451ce06e01
+        - ElementName: Music
+          ObjectType: 4
+          guid: f18753edb8e6b342850434eca3667032
+        - ElementName: FightMusic
+          ObjectType: 11
+          guid: 9904f5a5c1ec9c4ba5cf79c0123ce838
+        - ElementName: End
+          ObjectType: 10
+          guid: aaae704b2cd6b24fa2231c7a77cfae98
+      - name: Start
+        guid: ab1213622ebaac428f499ed2f142c5ab
+        id: 1281810935
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d2e7680339a7d14b802472451ce06e01
+        - ElementName: Music
+          ObjectType: 4
+          guid: f18753edb8e6b342850434eca3667032
+        - ElementName: FightMusic
+          ObjectType: 11
+          guid: 9904f5a5c1ec9c4ba5cf79c0123ce838
+        - ElementName: Start
+          ObjectType: 10
+          guid: ab1213622ebaac428f499ed2f142c5ab
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Music
+      guid: f18753edb8e6b342850434eca3667032
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d2e7680339a7d14b802472451ce06e01
+      - ElementName: Music
+        ObjectType: 4
+        guid: f18753edb8e6b342850434eca3667032
+      Path: Switches\Default Work Unit\Music
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

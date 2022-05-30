@@ -140,44 +140,76 @@
 														<Property Name="Scope" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList/>
+													<ChildrenList>
+														<EventActionException Name="" ID="{4F76C7B4-DC93-4AF6-BFD4-64553D1077B3}">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="FightMusic" ID="{33C1A019-BD32-4594-8156-87C091CAF6D1}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
+																</Reference>
+															</ReferenceList>
+														</EventActionException>
+													</ChildrenList>
 												</Action>
 												<Action Name="" ID="{5DB82F8F-3A9C-4788-945F-4DB802E40B03}" ShortID="4096227">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Boss Fight" ID="{19912430-2F66-4D33-AA41-E1C2778FD7FC}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
+															<ObjectRef Name="FightMusic" ID="{33C1A019-BD32-4594-8156-87C091CAF6D1}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="KillingBlow" ID="{8F6AF571-35B3-4FB1-9175-77C105D8241E}">
+										<Event Name="KillingBlow" ID="{8F6AF571-35B3-4FB1-9175-77C105D8241E}"/>
+										<Event Name="EndBattle" ID="{C1217E33-B431-4F10-AFB5-F20B2D06B4AE}">
 											<ChildrenList>
-												<Action Name="" ID="{AA8C0F4C-48B1-4E47-ADE5-A77DDB7A378A}" ShortID="798906627">
+												<Action Name="" ID="{ECAE1718-D57D-4BD2-9BAB-12321B4342AA}" ShortID="515046086">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="23"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="End" ID="{4B70AEAA-D62C-4FB2-A223-1C7A77CFAE98}" WorkUnitID="{0368E7D2-A739-4BD1-8024-72451CE06E01}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{897903F8-B144-43F0-A1B6-5A262ADF8240}" ShortID="619761320">
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="2"/>
-														<Property Name="Scope" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Loop" ID="{447A4E21-A1FF-4F9A-BC0E-3C97D944A9BF}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{6DD7144F-9D1B-4DA0-BAD1-357638B61D76}" ShortID="939943633">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="End" ID="{893C1F24-89C5-4045-821C-CD79B94A3742}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{100D04A1-8855-4344-A54C-CA6421EA9A8E}" ShortID="646843226">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="10"/>
 														<Property Name="Delay" Type="Real64" Value="5"/>
-														<Property Name="FadeTime" Type="Real64" Value="3"/>
 														<Property Name="Scope" Type="int16" Value="1"/>
 													</PropertyList>
-													<ReferenceList/>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FightMusic" ID="{33C1A019-BD32-4594-8156-87C091CAF6D1}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{86C43DB1-6722-460A-8393-8D2170FB7A57}" ShortID="218712181">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="9"/>
+														<Property Name="FadeTime" Type="Real64" Value="3"/>
+														<Property Name="MasterResume" Type="bool" Value="True"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Ambience" ID="{99699491-5DAF-45E7-8C32-B197FF40D2F5}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{8FADB792-C0C3-44FD-9852-1768D905AF2B}" ShortID="428601386">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="9"/>
+														<Property Name="Delay" Type="Real64" Value="5"/>
+														<Property Name="FadeTime" Type="Real64" Value="5"/>
+														<Property Name="MasterResume" Type="bool" Value="True"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Day to Day" ID="{41B21556-6C93-4B49-9C06-FA175C3197B4}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}"/>
+														</Reference>
+													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>

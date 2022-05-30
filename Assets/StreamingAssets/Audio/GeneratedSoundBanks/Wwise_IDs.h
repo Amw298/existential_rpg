@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID DIALOGSTARTNEWS = 3406973798U;
         static const AkUniqueID DIALOGSTARTTODOLIST = 1254152031U;
         static const AkUniqueID DOOROPEN = 1404805401U;
+        static const AkUniqueID ENDBATTLE = 4064399842U;
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID KILLINGBLOW = 1916415631U;
         static const AkUniqueID MUSICEND = 2803552149U;
@@ -46,6 +47,21 @@ namespace AK
         } // namespace AREA
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace FIGHTMUSIC
+        {
+            static const AkUniqueID GROUP = 3890691062U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID END = 529726532U;
+                static const AkUniqueID START = 1281810935U;
+            } // namespace SWITCH
+        } // namespace FIGHTMUSIC
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {
