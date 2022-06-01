@@ -9,7 +9,7 @@ Assets/AssetStoreTools*
 .vs/
 
 #WWise
-.cache
+existential_rpg_WWiseProject/.cache/
 *.akd
 *.prof
 *.validationcache
