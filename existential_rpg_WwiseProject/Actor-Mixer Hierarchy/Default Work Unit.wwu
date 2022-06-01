@@ -831,6 +831,437 @@
 										<ActiveSource Name="Communications, Radio, Turn On, Receive Static, Turn Off, Short SND33146" ID="{E6DB8EFA-3851-4383-B7BB-FE1F4CA24732}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Folder Name="Fight" ID="{498B9650-473A-495D-9173-DCA9CB0D0930}" ShortID="595756950">
+									<ChildrenList>
+										<ActorMixer Name="Impacts" ID="{9D11713D-5B91-4F9B-88DB-85244F85B024}" ShortID="569557328">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Attacks" ID="{0CAA6740-C260-4A47-B204-D6907B770DB1}" ShortID="621777555">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Wooshes" ID="{19CB3A2A-41C0-4354-8252-003CBDFA6F0C}" ShortID="340212486">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Woosh 1" ID="{3ABFA465-467C-4CA1-AC95-7E23E553B38F}" ShortID="24364777">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Fight, Cloth, Punch, Block, Swoosh SND4355 1" ID="{52BB923B-124C-4F68-976C-98CB8421A5BD}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0197122331155431"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0459952106029339"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.0788489324621723"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.297338864362742"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="176415618"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Fight, Cloth, Punch, Block, Swoosh SND4355 1" ID="{52BB923B-124C-4F68-976C-98CB8421A5BD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Woosh 2" ID="{6C282A1E-75BF-49A4-9914-95D5C4498ECD}" ShortID="888720508">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Fight, Cloth, Punch, Block, Swoosh SND4355 1" ID="{407181CB-BE82-4C0C-AA79-9DFF77DC5B56}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.00835991111710505"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.153265037146926"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.438351763203024"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.666681719653177"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="994015190"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Fight, Cloth, Punch, Block, Swoosh SND4355 1" ID="{407181CB-BE82-4C0C-AA79-9DFF77DC5B56}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Woosh 3" ID="{71C00202-D181-40B2-82AC-0CC217E626C9}" ShortID="433133672">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>9</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Fight, Cloth, Punch, Block, Swoosh SND4355 1" ID="{7B8A1413-BEE3-4FDE-8AFA-363BFA32C343}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0423289980732178"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0952402456647401"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.65614462909441"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.06885236030829"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="699940968"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Fight, Cloth, Punch, Block, Swoosh SND4355 1" ID="{7B8A1413-BEE3-4FDE-8AFA-363BFA32C343}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Woosh 4" ID="{F3D42FA8-8830-461D-B01A-A1DE3C968BEB}" ShortID="296703408">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Fight, Cloth, Punch, Block, Swoosh SND4355 1" ID="{3F8CEDFA-A494-4B70-8689-2F7136079488}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0634934971098264"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.71436958092485"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.97892581888248"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Fight, Cloth, Punch, Block, Swoosh SND4355 1.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="402215997"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Fight, Cloth, Punch, Block, Swoosh SND4355 1" ID="{3F8CEDFA-A494-4B70-8689-2F7136079488}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<BlendContainer Name="Kicks" ID="{36C7AEE6-5D8B-46CA-BBBD-70CC4233D48B}" ShortID="90815096">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Glass Cracks" ID="{A80D5385-A463-46DB-94B9-554C5325F5FC}" ShortID="1072443288">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="DESTRUCTION Glass Break 2" ID="{84A4455A-04CE-4495-975A-2CB34F1BA399}" ShortID="671708243">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="DESTRUCTION Glass Break 2" ID="{46D33960-FC6B-423A-A1F0-FA754901C6B0}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.00298572976878612"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.324449301541426"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0746432442196532"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="0.680746387283237"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>DESTRUCTION Glass Break 2.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="342996144"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="DESTRUCTION Glass Break 2" ID="{46D33960-FC6B-423A-A1F0-FA754901C6B0}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="DESTRUCTION Glass Break 3" ID="{D7E93351-5ACC-4334-9942-D5AD1C7D39B7}" ShortID="755366134">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="DESTRUCTION Glass Break 3" ID="{43D67247-EA8E-4805-98CA-8597AA1731C7}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.00755699060693642"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.309836614884393"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0334666726878613"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>DESTRUCTION Glass Break 3.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="629655936"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="DESTRUCTION Glass Break 3" ID="{43D67247-EA8E-4805-98CA-8597AA1731C7}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="DESTRUCTION Glass Break 4" ID="{8BB36C4B-A80E-4BC5-889E-878EAF5C8AE2}" ShortID="844000625">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="DESTRUCTION Glass Break 4" ID="{F208D8D7-2676-4619-A324-0B0C12E76A77}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0012651433044316"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.350444695327553"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.037954299132948"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="0.793244851878613"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>DESTRUCTION Glass Break 4.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="796831017"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="DESTRUCTION Glass Break 4" ID="{F208D8D7-2676-4619-A324-0B0C12E76A77}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="DESTRUCTION Glass Break 5" ID="{4A623730-2BB3-407E-B61E-23854A3E983E}" ShortID="424295203">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="DESTRUCTION Glass Break 5" ID="{C41EAD43-7B25-4C8A-88DD-0E2BB0FFA1EA}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.00134950024084779"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.412947073699422"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0404850072254335"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="0.844787150770713"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>DESTRUCTION Glass Break 5.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="981540716"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="DESTRUCTION Glass Break 5" ID="{C41EAD43-7B25-4C8A-88DD-0E2BB0FFA1EA}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<ObjectLists/>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Thud" ID="{8AAD7A5E-AD22-44C1-A66F-0A6C61F33B4C}" ShortID="5171381">
+																	<PropertyList>
+																		<Property Name="Lowpass" Type="int16">
+																			<ValueList>
+																				<Value>53</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Thud 1" ID="{3E91F584-107B-430E-86C6-11C1AB6E7954}" ShortID="260966825">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SPORTS Soccer Kick 2" ID="{E32D2F8A-0206-410D-8065-5C4CDCF770E9}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.125558928571429"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.180490959821429"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="0.462998549107145"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SPORTS Soccer Kick 2.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1003846998"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SPORTS Soccer Kick 2" ID="{E32D2F8A-0206-410D-8065-5C4CDCF770E9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Thud 2" ID="{D1A6B914-2613-4623-9A76-04F9B780D5B0}" ShortID="501391218">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SPORTS Soccer Kick 2" ID="{08B4886A-D65F-47C4-AA21-FBF40EC364F4}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.023542299107143"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.0513956978016896"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="3.20960011160714"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.40224960405169"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SPORTS Soccer Kick 2.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="781266119"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SPORTS Soccer Kick 2" ID="{08B4886A-D65F-47C4-AA21-FBF40EC364F4}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Thud 3" ID="{3921E476-05A1-4C60-943F-184AD8868031}" ShortID="490369205">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{28CF7DDF-2016-487D-93AA-216306EE8937}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{12122E84-D0BE-4627-8EAB-E21A3E541FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SPORTS Soccer Kick 2" ID="{481707AF-751C-4EE1-8B61-298988153997}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.00550095481121282"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.094169196428572"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="6.15125301931881"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="6.34857332589286"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SPORTS Soccer Kick 2.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="555129500"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SPORTS Soccer Kick 2" ID="{481707AF-751C-4EE1-8B61-298988153997}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<ObjectLists/>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<ObjectLists/>
+														</BlendContainer>
+													</ChildrenList>
+													<ObjectLists/>
+													<Playlist>
+														<ItemRef Name="Wooshes" ID="{19CB3A2A-41C0-4354-8252-003CBDFA6F0C}"/>
+														<ItemRef Name="Kicks" ID="{36C7AEE6-5D8B-46CA-BBBD-70CC4233D48B}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<ObjectLists/>
+										</ActorMixer>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>

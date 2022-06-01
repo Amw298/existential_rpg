@@ -13,17 +13,21 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ATTACK = 180661997U;
         static const AkUniqueID DIALOGSTARTBED = 165295640U;
         static const AkUniqueID DIALOGSTARTLAPPY = 4042399731U;
         static const AkUniqueID DIALOGSTARTMESS = 2401650427U;
         static const AkUniqueID DIALOGSTARTNEWS = 3406973798U;
         static const AkUniqueID DIALOGSTARTTODOLIST = 1254152031U;
         static const AkUniqueID DOOROPEN = 1404805401U;
+        static const AkUniqueID ENDBATTLE = 4064399842U;
         static const AkUniqueID GAMESTART = 4058101365U;
+        static const AkUniqueID KILLINGBLOW = 1916415631U;
         static const AkUniqueID MUSICEND = 2803552149U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID POURCOFFEE = 2037790311U;
         static const AkUniqueID SCENEEND = 2218040726U;
+        static const AkUniqueID STARTBATTLE = 10099645U;
         static const AkUniqueID STOPNEWS = 832825332U;
         static const AkUniqueID TEXTSOUND = 2992915453U;
     } // namespace EVENTS
@@ -43,6 +47,21 @@ namespace AK
         } // namespace AREA
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace FIGHTMUSIC
+        {
+            static const AkUniqueID GROUP = 3890691062U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID END = 529726532U;
+                static const AkUniqueID START = 1281810935U;
+            } // namespace SWITCH
+        } // namespace FIGHTMUSIC
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

@@ -22,6 +22,7 @@ public class BattleManager : MonoBehaviour
     public Animator flasher;
     public void OnEnable()
     {
+        AkSoundEngine.SetSwitch("FightMusic", "Start", gameObject);
         AkSoundEngine.PostEvent("StartBattle", this.gameObject);
        
         enemyHp = enemyStates.Length-1;
@@ -103,6 +104,7 @@ public class BattleManager : MonoBehaviour
     }
     public void EndBattle()
     {
+        AkSoundEngine.SetSwitch("FightMusic", "End", gameObject);
         AkSoundEngine.PostEvent("EndBattle", this.gameObject);
 
         this.gameObject.SetActive(false);

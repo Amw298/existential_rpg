@@ -9,7 +9,9 @@
 						<ObjectRef Name="TV On and Idle" ID="{EF72F7D7-1289-47AA-8469-23577C6DE0B4}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{E78B2B6F-E3AA-47FF-9D50-64667B564177}" WorkUnitID="{E78B2B6F-E3AA-47FF-9D50-64667B564177}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}" WorkUnitID="{750EFBB6-565B-486A-9DE2-5A378A755CB2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StartBattle" ID="{83008EA9-9593-4ABF-99F9-478F89D066BD}" WorkUnitID="{E78B2B6F-E3AA-47FF-9D50-64667B564177}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}" WorkUnitID="{E9D4DABC-5DAC-4AD0-8DAC-108756A64A81}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="KillingBlow" ID="{8F6AF571-35B3-4FB1-9175-77C105D8241E}" WorkUnitID="{E78B2B6F-E3AA-47FF-9D50-64667B564177}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
